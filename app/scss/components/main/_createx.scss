@@ -1,0 +1,65 @@
+.createx {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    width: 133px;
+    height: 182px;
+    top: 80px;
+    background-image: url(../../../images/icons/dots-createx.png);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    @include pseudo;
+    width: 120px;
+    height: 287px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../../images/icons/circles-createx.png);
+    background-repeat: no-repeat;
+  }
+
+  &__inner {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    min-height: 560px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__info {
+    align-items: flex-end;
+    margin-left: 135px;
+    max-width: 390px;
+  }
+
+  &__title {
+    border: 1px solid #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    padding-left: 32px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 16px;
+      height: 16px;
+      background-image: url(../../../images/icons/check.png);
+      left: 0;
+      top: 7px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}

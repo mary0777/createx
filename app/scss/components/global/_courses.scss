@@ -1,0 +1,119 @@
+.courses {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+
+  &__title {}
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.courses-card {
+  max-width: 600px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 8px;
+  transition: box-shadow 0.3s linear;
+
+  &--marketing {
+    .courses-card__title {
+      &::before {
+        content: 'Marketing';
+        background-color: $c-marketing;
+      }
+    }
+  }
+
+  &--management {
+    .courses-card__title {
+      &::before {
+        content: 'Management';
+        background-color: $c-management;
+      }
+    }
+  }
+
+  &--recruting {
+    .courses-card__title {
+      &::before {
+        content: 'HR & Recruting';
+        background-color: $c-recruting;
+      }
+    }
+  }
+
+  &--design {
+    .courses-card__title {
+      &::before {
+        content: 'Design';
+        background-color: $c-design;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.6), 0px 30px 24px -10px rgba(154, 156, 165, 0.3), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  }
+
+  &__link {
+    display: flex;
+    outline: transparent;
+    border: 1px solid transparent;
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__img {}
+
+  &__info {
+    padding: 32px;
+    line-height: 1.5;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    color: $c-title;
+    margin-bottom: 20px;
+    padding-top: 43px;
+    position: relative;
+    @include line-clamp(2);
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      color: $c-white;
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 1px 8px;
+      border-radius: 4px;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: $c-danger;
+    margin-right: 8px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 18px;
+    color: $c-gray-700;
+    position: relative;
+    padding-left: 8px;
+    border-left: 1px solid $c-gray-700;
+  }
+}

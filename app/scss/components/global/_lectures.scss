@@ -1,0 +1,119 @@
+.lectures {
+  margin-bottom: 120px;
+  padding: 80px 0;
+  position: relative;
+  background-image: url(../../../images/main/lectures-bg.jpg);
+
+  &::before {
+    @include pseudo;
+    width: 116px;
+    height: 159px;
+    bottom: 0;
+    background-image: url(../../../images/main/dots.png);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    @include pseudo;
+    width: 284px;
+    height: 284px;
+    top: -133px;
+    right: -60px;
+    background-image: url(../../../images/main/circles.png);
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    background-color: $c-white;
+    border-radius: 4px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: flex-start;
+    transition: box-shadow 0.3s linear;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &:hover {
+      box-shadow: 0 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    }
+  }
+
+  &__time {
+    display: flex;
+    margin-right: 40px;
+    max-width: 180px;
+    width: 100%;
+  }
+
+  &__num {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.3;
+    margin-right: 20px;
+    color: $c-primary;
+  }
+
+  &__month {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-title;
+  }
+
+  &__clock {
+    color: $c-gray-700;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__heading {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-title;
+    margin-right: 40px;
+  }
+
+  &__type {
+    display: block;
+    margin-top: 4px;
+    color: $c-gray-700;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  &__link-white {
+    margin-left: auto;
+    max-width: 136px;
+    width: 100%;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__more {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: $c-title;
+    margin-right: 40px;
+  }
+}

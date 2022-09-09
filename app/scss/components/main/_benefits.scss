@@ -1,0 +1,124 @@
+.benefits {
+  margin-bottom: 120px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+  }
+
+  &__item {}
+
+  &__link {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: $c-gray-600;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: transparent;
+    transition: color 0.3s linear, border 0.3s linear;
+
+    &--active {
+      border: 1px solid $c-primary;
+      color: $c-primary;
+
+      .benefits__headline {
+        &::before {
+          background-color: $c-primary;
+        }
+      }
+    }
+
+    &:hover {
+      border: 1px solid $c-primary;
+      color: $c-primary;
+
+      .benefits__headline {
+        &::before {
+          background-color: $c-primary;
+        }
+      }
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__headline {
+    position: relative;
+    padding-left: 32px;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $c-gray-600;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      transition: background-color 0.3s linear;
+    }
+
+    &--tutors {
+      &::before {
+        mask-image: url('../images/sprite.svg#star');
+      }
+    }
+
+    &--feedback {
+      &::before {
+        mask-image: url('../../../images/sprite.svg#like');
+      }
+    }
+
+    &--online {
+      &::before {
+        mask-image: url('../../../images/sprite.svg#layouts');
+      }
+    }
+
+    &--community {
+      &::before {
+        mask-image: url('../../../images/sprite.svg#chat');
+      }
+    }
+  }
+
+  &__content {}
+
+  &__descr {
+    display: none;
+
+    &--active {
+      background-repeat: no-repeat;
+      background-position: right;
+      display: flex;
+      align-items: center;
+      min-height: 440px;
+    }
+  }
+
+  &__box {
+    max-width: 495px;
+  }
+
+  &__name {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    color: $c-title;
+    margin-bottom: 24px;
+  }
+
+  &__text {}
+}

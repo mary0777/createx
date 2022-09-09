@@ -1,0 +1,18 @@
+.subscribe {
+  background-image: url(../../../images/main/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 120px 0 180px;
+
+  &__title {
+    margin: 0 auto 60px;
+    max-width: 810px;
+  }
+
+  &__input-email {
+    margin-right: 24px;
+  }
+
+}
