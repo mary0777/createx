@@ -9,6 +9,9 @@ $(function () {
     $($(this).attr('href')).addClass('benefits__descr--active');
   });
 
+
+  $('.footer__input').styler();
+
 });
 
 
