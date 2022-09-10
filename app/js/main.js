@@ -12,6 +12,13 @@ $(function () {
 
   $('.footer__input').styler();
 
+  $('.team__inner').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:'<button type="button" class="btn-prev"></button>',
+    nextArrow:'<button type="button" class="btn-next"></button>',
+  });
+
 });
 
 
