@@ -1,0 +1,254 @@
+.blog {
+  padding-top: 120px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+
+  &__title {}
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 390px;
+
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+
+    &--podcast {
+      .blog__images {
+        &::before {
+          content: 'Podcast';
+        }
+
+        &::after {
+          background-image: url(../../../images/blog/mic.svg);
+        }
+      }
+    }
+
+    &--video {
+      .blog__images {
+        &::before {
+          content: 'Video';
+        }
+
+        &::after {
+          background-image: url(../../../images/blog/play.svg);
+        }
+      }
+    }
+
+    &--article {
+      .blog__images {
+        &::before {
+          content: 'Article';
+        }
+
+        &::after {
+          background-image: url(../../../images/blog/files.svg);
+        }
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: transparent;
+
+    &::before {
+      position: absolute;
+      padding: 0 8px 0 28px; 
+      top: 12px;
+      left: 12px;
+      border-radius: 4px;
+      background-color: #fff;
+      transition: background-color 0.3s linear;
+    }
+
+    &::after {
+      @include pseudo;
+      top: 17px;
+      left: 20px;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+    }
+
+    &:hover{
+      &::before{
+        background-color: $c-danger;
+      }
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  &__descr {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $c-gray-700;
+
+    &:not(:last-child){
+      padding-right: 12px;
+      border-right: 1px solid #787A80;
+    }
+
+    &:not(:first-child){
+      margin-left: 12px;
+    }
+  }
+
+  &__type {
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: background-color 0.3s linear;
+
+    &:hover{
+      color: $c-primary;
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding-left: 24px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: background-color 0.3s linear;
+
+    &::before {
+      @include pseudo;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      background-color: $c-gray-700;
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      transition: background-color 0.3s linear;
+    }
+
+    &--calendar {
+      &::before {
+        mask-image: url('../../../images/sprite.svg#calendar');
+      }
+    }
+
+    &--clock {
+      &::before {
+        mask-image: url('../../../images/sprite.svg#clock');
+      }
+    }
+
+    &:hover{
+      color: $c-primary;
+
+      &::before{
+        background-color: $c-primary;
+      }
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__link-title {
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: transparent;
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-title;
+    border-radius: 4px;
+    transition: color 0.3s linear, border 0.3s linear;
+
+    &:hover{
+      color: $c-primary;
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__text {
+    @include line-clamp(2);
+    margin-bottom: 16px;
+  }
+
+  &__more {
+    display: inline-block;
+    position: relative;
+    color: $c-title;
+    padding-right: 32px;
+    font-weight: 700;
+    outline: transparent;
+    border-radius: 4px;
+    transition: color 0.3s linear;
+
+    &::after {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      right: 0;
+      top: 2px;
+      background-color: $c-primary;
+      mask-image: url('../../../images/sprite.svg#arrow-next');
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      transition: background-color 0.3s linear, transform 0.3s linear, border 0.3s linear;
+    }
+
+    &:hover{
+      color: $c-primary;
+
+      &::after{
+        background-color: $c-gray-700;
+        transform: translateX(10px);
+      }
+    }
+
+    &:focus{
+      border: 1px solid $c-primary;
+    }
+  }
+}

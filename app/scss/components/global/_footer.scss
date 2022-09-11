@@ -20,7 +20,19 @@
 
   &__logo {
     margin-bottom: 24px;
-    display: block;
+    display: inline-block;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: opacity 0.3s linear, border 0.3s linear;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
   }
 
   &__title {
@@ -231,6 +243,7 @@
     background-color: #393c46;
     border-radius: 50%;
     display: flex;
+    border: 1px solid transparent;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s linear;
@@ -247,8 +260,9 @@
         background-color: $c-primary;
       }
     }
-  }
 
+  }
+  
   &__link {
     position: relative;
     display: block;
