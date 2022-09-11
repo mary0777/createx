@@ -19,6 +19,17 @@ $(function () {
     nextArrow:'<button type="button" class="btn-next"></button>',
   });
 
+  $('.reviews__inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'<button type="button" class="btn-prev"></button>',
+    nextArrow: '<button type="button" class="btn-next"></button>',
+    dots: true,
+    fade: true,
+    // appendArrows: $('.reviews__item')
+  });
+
 });
 
 
@@ -30,3 +41,5 @@ $(window).scroll(function () {
     $('.header').removeClass('header--fixed');
   }
 });
+
+

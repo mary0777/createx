@@ -1,0 +1,167 @@
+.reviews {
+  background-image: url(../../../images/main/team-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__inner {
+    // margin-bottom: 60px;
+    // padding-bottom: 60px;
+    // position: relative;
+  }
+
+
+  &__item {
+    max-width: 1020px;
+    background-color: $c-white;
+    box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    padding: 64px 105px;
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  &__figure {
+    padding-left: 58px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 28px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      background-image: url(../../../images/icons/braces.png);
+    }
+  }
+
+  &__blockquote {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-gray-800;
+    margin-bottom: 24px;
+  }
+
+  &__descr {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 20px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-weight: 700;
+    color: $c-title;
+  }
+
+  &__profession {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $c-gray-700;
+    margin-top: 4px;
+  }
+
+  .slick-slide{
+    margin-bottom: 45px;
+  }
+
+  .btn-next,
+  .btn-prev {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: transparent;
+    border: 1px solid transparent;
+    z-index: 1;
+    transition: background-color 0.3s linear, border 0.3s linear;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      background-color: $c-default;
+      mask-repeat: no-repeat;
+      transition: background-color 0.3s linear;
+    }
+
+    &:hover {
+      background-color: $c-primary;
+
+      &::before {
+        background-color: $c-white;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .btn-next {
+    right: 0;
+
+    &::before {
+      mask-image: url('../images/sprite.svg#arrow-next');
+    }
+  }
+
+  .btn-prev {
+    left: 0;
+
+    &::before {
+      mask-image: url('../images/sprite.svg#arrow-prev');
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &:hover{
+        button{
+          border: 3px solid $c-gray-800;
+        }
+      }
+    }
+
+    .slick-active{
+      button{
+        border: 3px solid $c-gray-800;
+      }
+    }
+
+    button{
+      font-size: 0;
+      width: 30px;
+      border: 3px solid #B3B7BC;
+      border-radius: 4px;
+      outline: transparent;
+      transition: border 0.3s linear;
+    }
+  }
+}
