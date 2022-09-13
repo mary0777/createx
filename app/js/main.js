@@ -10,7 +10,7 @@ $(function () {
   });
 
 
-  $('.footer__input').styler();
+  $('.search').styler();
 
   $('.team__inner').slick({
     slidesToShow: 4,
@@ -27,8 +27,21 @@ $(function () {
     nextArrow: '<button type="button" class="btn-next"></button>',
     dots: true,
     fade: true,
-    // appendArrows: $('.reviews__item')
   });
+
+ 
+  var mixer = mixitup('.courses__list', {
+    
+      // "animation": {
+      //     "duration": 250,
+      //     "nudge": true,
+      //     "reverseOut": false,
+      //     "effects": "fade translateZ(-100px)"
+      // }
+  
+  });
+
+  
 
 });
 

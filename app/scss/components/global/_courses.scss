@@ -59,6 +59,15 @@
     }
   }
 
+  &--development {
+    .courses-card__title {
+      &::before {
+        content: 'Development';
+        background-color: $c-development;
+      }
+    }
+  }
+
   &:hover {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.6), 0px 30px 24px -10px rgba(154, 156, 165, 0.3), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   }
@@ -67,13 +76,17 @@
     display: flex;
     outline: transparent;
     border: 1px solid transparent;
-
+    border-radius: 4px;
+    height: 100%;
+    
     &:focus {
       border: 1px solid $c-primary;
     }
   }
 
-  &__img {}
+  &__img {
+    object-fit: cover;
+  }
 
   &__info {
     padding: 32px;

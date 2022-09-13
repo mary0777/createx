@@ -1,0 +1,175 @@
+.courses {
+
+  &--courses {
+    margin-top: 133px;
+    margin-bottom: 120px;
+  }
+
+  &__titles {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__top {}
+
+  &__filter {
+    display: flex;
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__btn {
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: $c-gray-600;
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: color 0.3s linear, border 0.5s linear;
+
+    &:hover {
+      border: 1px solid $c-primary;
+      color: $c-primary;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__num {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  &__inner {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+  }
+
+  &__card {
+    max-width: 390px;
+    min-height: 438px;
+    height: 100%;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__img {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &__info {
+    padding: 24px;
+  }
+
+  &__more {
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s linear, border 0.3s linear;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $c-default;
+      mask-image: url('../../../images/sprite.svg#convert');
+      mask-repeat: no-repeat;
+      transition: background-color 0.3s linear;
+    }
+
+    &:hover {
+      color: $c-primary;
+
+      &::before {
+        background-color: $c-primary;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .mixitup-control-active {
+    color: $c-primary;
+    border: 1px solid $c-primary;
+  }
+}
+
+.search {
+  position: relative;
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+
+  &:hover {
+    .search__btn {
+      background-color: $c-primary;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: $c-white;
+    border: 1px solid #d7dadd;
+    color: $c-gray-600;
+    outline: transparent;
+    border-radius: 4px;
+    padding: 11px 40px 11px 16px;
+    transition: border 0.3s linear;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.5;
+      color: $c-gray-600;
+      transition: color 0.3s linear;
+    }
+
+    &:hover {
+      border: 1px solid $c-primary;
+
+      &::placeholder {
+        color: $c-primary;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px;
+    width: 24px;
+    height: 24px;
+    background-color: $c-gray-600;
+    mask-image: url('../../../images/sprite.svg#search');
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s linear;
+  }
+}
+
+
+// .search__inpu::-ms-clear {
+//   width : 0;
+//   height: 0;
+// }
