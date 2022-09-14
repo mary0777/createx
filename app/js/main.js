@@ -12,12 +12,14 @@ $(function () {
 
   $('.search').styler();
 
+
   $('.team__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:'<button type="button" class="btn-prev"></button>',
     nextArrow:'<button type="button" class="btn-next"></button>',
   });
+
 
   $('.reviews__inner').slick({
     slidesToShow: 1,
@@ -28,20 +30,21 @@ $(function () {
     dots: true,
     fade: true,
   });
-
- 
-  var mixer = mixitup('.courses__list', {
-    
-      // "animation": {
-      //     "duration": 250,
-      //     "nudge": true,
-      //     "reverseOut": false,
-      //     "effects": "fade translateZ(-100px)"
-      // }
   
+
+  $('.like__list').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'<button type="button" class="btn-prev"></button>',
+    nextArrow: '<button type="button" class="btn-next"></button>',
   });
 
-  
+ 
+  var mixer = mixitup('.courses__list');
+
+
+
 
 });
 

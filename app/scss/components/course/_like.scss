@@ -1,0 +1,87 @@
+.like {
+  padding-top: 120px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    padding-bottom: 80px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__more {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: $c-title;
+  }
+
+  .slick-current {
+    .courses-card {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .btn-next,
+  .btn-prev {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -96px;
+    right: 0;
+    outline: transparent;
+    border: 1px solid transparent;
+    z-index: 1;
+    transition: background-color 0.3s linear, border 0.3s linear;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      background-color: $c-default;
+      mask-repeat: no-repeat;
+      transition: background-color 0.3s linear;
+    }
+
+    &:hover {
+      background-color: $c-primary;
+
+      &::before {
+        background-color: $c-white;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .btn-next {
+    &::before {
+      mask-image: url('../images/sprite.svg#arrow-next');
+    }
+  }
+
+  .btn-prev {
+    right: 60px;
+
+    &::before {
+      mask-image: url('../images/sprite.svg#arrow-prev');
+    }
+  }
+}

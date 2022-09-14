@@ -1,0 +1,42 @@
+.benefit {
+  background-image: url(../../../images/main/benefit-bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-right: 40px;
+    max-width: 495px;
+  }
+
+  &__list {
+    max-width: 600px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 36px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      @include pseudo;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 5px;
+      background-image: url(../../../images/icons/check.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
