@@ -1,0 +1,28 @@
+.name {
+  background-image: url(../../../images/courses/course-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center cneter;
+  background-size: cover;
+  padding: 213px 0 120px 0;
+
+  &__title {
+    max-width: 1020px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: $c-title;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $c-primary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,100 @@
+.steps {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    width: 85px;
+    height: 135px;
+    right: 66px;
+    top: 0;
+    background-image: url(../../../images/main/steps-bg.png);
+    background-repeat: no-repeat;
+  }
+
+  &__titles {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 285px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      .steps__num {
+        color: $c-primary;
+        background-color: #fff4f3;
+
+        &::before {
+          background-color: #ffdedc;
+        }
+      }
+    }
+  }
+
+  &__num {
+    display: block;
+    max-width: 285px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #d7dadd;
+    width: 116px;
+    height: 116px;
+    background-color: $c-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -31px;
+    z-index: 1;
+    position: relative;
+    transition: background-color 0.5s linear, color 0.5s linear;
+
+    &::before {
+      @include pseudo;
+      width: 84px;
+      height: 84px;
+      background-color: $c-white;
+      border-radius: 50%;
+      z-index: -1;
+      transition: background-color 0.5s linear;
+    }
+
+    &::after {
+      @include pseudo;
+      width: 200px;
+      height: 1px;
+      top: 50%;
+      right: -200px;
+      transform: translateY(-50%);
+      border-bottom: 1px dashed #D7DADD;
+    }
+
+    &--display {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-title;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: $c-gray-700;
+  }
+}

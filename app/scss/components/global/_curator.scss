@@ -1,0 +1,126 @@
+.curator {
+  padding-top: 66px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 242px;
+      height: 242px;
+      background-image: url(../../../images/curator/circle-bg.png);
+      background-repeat: no-repeat;
+      left: -143px;
+      top: -66px;
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    margin-right: 40px;
+  }
+
+  &__info {
+    max-width: 600px;
+    padding-top: 20px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__proffesion {
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-gray-700;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    padding-left: 24px;
+    position: relative;
+    font-weight: 700;
+
+    &::before {
+      @include pseudo;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--rate {
+      &::before {
+        background-image: url(../../../images/curator/star.svg);
+      }
+    }
+
+    &--courses {
+      &::before {
+        background-image: url(../../../images/curator/play.svg);
+      }
+    }
+
+    &--students {
+      &::before {
+        background-image: url(../../../images/curator/profile.svg);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__social {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $c-gray-700;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    transition: background-color 0.3s linear;
+    position: relative;
+
+    &:hover {
+      background-color: $c-primary;
+    }
+  }
+}
