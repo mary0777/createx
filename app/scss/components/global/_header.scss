@@ -34,6 +34,10 @@
     border-radius: 4px;
     transition: border 0.3s linear, color 0.3s linear;
 
+    &--active{
+      color: $c-primary;
+    }
+
     &:hover {
       color: $c-primary;
     }

@@ -1,9 +1,17 @@
 .certificate {
   padding-top: 120px;
 
+  &--courses{
+    padding-bottom: 120px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    &--courses{
+      align-items: center;
+    }
   }
 
   &__info {

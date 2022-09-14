@@ -59,13 +59,15 @@
           </button>
         </li>
       </ul>
-      <label class="search" for="search">
-        <input class="search__input" type="search" id="search" name="search" placeholder="Search course...">
-        <button class="search__btn" type="button"></button>
-        <span class="sr-only">
-          Поиск курса
-        </span>
-      </label>
+      <form class="search" action="">
+        <label class="search__label" for="search">
+          <input class="search__input" type="text" id="search" name="search" placeholder="Search course...">
+          <button class="search__btn" type="submit"></button>
+          <span class="sr-only">
+            Поиск курса
+          </span>
+        </label>
+      </form>
     </div>
 
     <ul class="courses__list courses__inner">

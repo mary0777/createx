@@ -193,7 +193,67 @@ body {
   }
 
   &:focus {
-    border: 1px solid$c-gray-600;
-    box-shadow: 0 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border: 1px solid rgba(255, 63, 58, 0.4);
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+}
+
+.search {
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  
+  &:hover {
+    .search__btn {
+      background-color: $c-primary;
+    }
+  }
+  
+  &__label{
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: $c-white;
+    border: 1px solid #d7dadd;
+    color: $c-gray-600;
+    outline: transparent;
+    border-radius: 4px;
+    padding: 11px 40px 11px 16px;
+    transition: border 0.3s linear;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.5;
+      color: $c-gray-600;
+      transition: color 0.3s linear;
+    }
+
+    &:hover {
+      border: 1px solid $c-primary;
+
+      &::placeholder {
+        color: $c-primary;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+      box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px;
+    width: 24px;
+    height: 24px;
+    background-color: $c-gray-600;
+    mask-image: url('../../../images/sprite.svg#search');
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s linear;
   }
 }

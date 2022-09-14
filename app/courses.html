@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Createx</title>
+  <title>Createx  | Courses</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="app/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="app/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="app/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="app/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="app/images/favicon/safari-pinned-tab.svg" color="#ff0000">
+  <link rel="shortcut icon" href="app/images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="app/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -25,7 +34,7 @@
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link menu__link--active" href="#">
             Courses
           </a>
         </li>
@@ -120,13 +129,15 @@
           </button>
         </li>
       </ul>
-      <label class="search" for="search">
-        <input class="search__input" type="search" id="search" name="search" placeholder="Search course...">
-        <button class="search__btn" type="button"></button>
-        <span class="sr-only">
-          Поиск курса
-        </span>
-      </label>
+      <form class="search" action="">
+        <label class="search__label" for="search">
+          <input class="search__input" type="text" id="search" name="search" placeholder="Search course...">
+          <button class="search__btn" type="submit"></button>
+          <span class="sr-only">
+            Поиск курса
+          </span>
+        </label>
+      </form>
     </div>
 
     <ul class="courses__list courses__inner">
@@ -427,9 +438,9 @@
     </ul>
   </div>
 </section>
-  <section class="certificate">
+  <section class="certificate certificate--courses">
   <div class="container">
-    <div class="certificate__inner">
+    <div class="certificate__inner certificate__inner--courses">
       <div class="certificate__info">
         <h2 class="title certificate__title">
           <span class="subtitle">

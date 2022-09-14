@@ -25,6 +25,20 @@
     outline: transparent;
     transition: color 0.3s linear, border 0.3s linear;
 
+    &:hover {
+      color: $c-gray-800;
+
+      .benefits__headline {
+        &::before {
+          background-color: $c-gray-800;
+        }
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+
     &--active {
       border: 1px solid $c-primary;
       color: $c-primary;
@@ -34,21 +48,16 @@
           background-color: $c-primary;
         }
       }
-    }
 
-    &:hover {
-      border: 1px solid $c-primary;
-      color: $c-primary;
+      &:hover {
+        color: $c-primary;
 
-      .benefits__headline {
-        &::before {
-          background-color: $c-primary;
+        .benefits__headline {
+          &::before {
+            background-color: $c-primary;
+          }
         }
       }
-    }
-
-    &:focus{
-      border: 1px solid $c-primary;
     }
   }
 
