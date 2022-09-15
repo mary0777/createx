@@ -169,8 +169,16 @@ body {
   font-size: 12px;
 }
 
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+line-height: 1.5;
+}
 
-.input-email {
+.input-email,
+.input-name,
+.input-phone{
   border: 1px solid #d7dadd;
   border-radius: 4px;
   padding: 13px 16px;

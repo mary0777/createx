@@ -18,18 +18,18 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
 
   <div class="wrapper">
 <header class="header">
   <div class="container">
     <nav class="menu">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="../../../images/logo.png" alt="Logo" width="120" height="22">
       </a>
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="about.html">
             About Us
           </a>
         </li>
@@ -39,17 +39,17 @@
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="events.html">
             Events
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="blog.html">
             Blog
           </a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="contacts.html">
             Contacts
           </a>
         </li>
@@ -70,6 +70,10 @@
 
   <section class="courses courses--courses">
   <div class="container">
+
+    <h1 class="sr-only">
+      Online courses
+    </h1>
 
     <h2 class="title courses__titles">
       <span class="subtitle">
@@ -143,7 +147,7 @@
     <ul class="courses__list courses__inner">
       <li class="courses__item mix category-marketing">
         <article class="courses-card courses-card--marketing courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/1-1.jpg" alt="Photo by Jerome Bell"
               width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -163,7 +167,7 @@
       </li>
       <li class="courses__item mix category-management">
         <article class="courses-card courses-card--management courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/2-2.jpg"
               alt="Photo by Marvin McKinney" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -183,7 +187,7 @@
       </li>
       <li class="courses__item mix category-recruting">
         <article class="courses-card courses-card--recruting courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/3-3.jpg"
               alt="Photo by Leslie Alexander Li" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -203,7 +207,7 @@
       </li>
       <li class="courses__item mix category-marketing">
         <article class="courses-card courses-card--marketing courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/4-4.jpg"
               alt="Photo  by Kristin Watson" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -223,7 +227,7 @@
       </li>
       <li class="courses__item mix category-design">
         <article class="courses-card courses-card--design courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/5-5.jpg" alt="Photo by Guy Hawkins"
               width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -243,7 +247,7 @@
       </li>
       <li class="courses__item mix category-management">
         <article class="courses-card courses-card--management courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/6-6.jpg"
               alt="Photo by Dianne Russell" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -261,11 +265,9 @@
           </a>
         </article>
       </li>
-
-
       <li class="courses__item mix category-development">
         <article class="courses-card courses-card--development courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/7-7.jpg"
               alt="Photo by Kathryn Murphy" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -285,7 +287,7 @@
       </li>
       <li class="courses__item mix category-recruting">
         <article class="courses-card courses-card--recruting courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/8-8.jpg"
               alt="Photo by Kathryn Murphy" width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -305,7 +307,7 @@
       </li>
       <li class="courses__item mix category-design">
         <article class="courses-card courses-card--design courses__card">
-          <a class="courses-card__link courses__link" href="#">
+          <a class="courses-card__link courses__link" href="course.html">
             <img class="courses-card__img courses__img" src="../../../images/courses/9-9.jpg" alt="Photo by Cody Fisher"
               width="390" height="240">
             <div class="courses-card__info courses__info">
@@ -482,7 +484,9 @@
       Subscribe to the Createx School announcements
     </h2>
     <form action="">
-      <label for="email"></label>
+      <label class="sr-only" for="email">
+        Введите свой email
+      </label>
       <input class="input-email subscribe__input-email" type="email" id="email" name="email"
         placeholder="Your working email" required="required">
       <button class="link link-l" type="submit">
@@ -497,7 +501,7 @@
       <ul class="footer__list">
 
         <li class="footer__item">
-          <a class="footer__logo" href="#">
+          <a class="footer__logo" href="index.html">
             <img src="../../../images/logo-white.svg" alt="Logo" width="120" height="22">
           </a>
           <div class="footer__text">
@@ -559,27 +563,27 @@
           </h3>
           <ul class="footer__map">
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="about.html">
                 About Us
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href=" courses.html">
                 Courses
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="events.html">
                 Events
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="blog.html">
                 Blog
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="contacts.html">
                 Contacts
               </a>
             </li>
@@ -592,27 +596,27 @@
           </h3>
           <ul class="footer__courses">
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="courses.html">
                 Marketing
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="courses.html">
                 Management
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="courses.html">
                 HR & Recruting
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="courses.html">
                 Design
               </a>
             </li>
             <li class="footer__items">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="courses.html">
                 Development
               </a>
             </li>
@@ -664,7 +668,7 @@
             by Createx Studio
           </a>
         </div>
-        <a class="footer__top" href="#">
+        <a class="footer__top" href="#body">
           GO TO TOP
       </div>
       </a>
