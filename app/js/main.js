@@ -10,7 +10,7 @@ $(function () {
   });
 
 
-  $('.search').styler();
+  $('.select, select-num').styler();
 
 
   $('.team__inner').slick({
@@ -41,12 +41,27 @@ $(function () {
   });
 
 
- $(".learn__heading").click(function(){
-  $(this).next(".learn__text").removeClass("learn__text--open").slideToggle("slow");
-   $(this).siblings(".learn__text").addClass("learn__text--open");
-   $(this).toggleClass('learn__heading--active')
+ $(".accordion__heading").click(function(){
+  $(this).next('.accordion__text').removeClass('accordion__text--open').slideToggle("slow");
+   $(this).siblings('.accordion__text').addClass('accordion__text--open');
+   $(this).toggleClass('accordion__heading--active')
 });
 
+  
+$('.events__button').on('click', function (){
+  $('.events__button').removeClass('events__button--active');
+  $(this).addClass('events__button--active');
+});
+  
+$('.events__button--grid').on('click', function (){
+  $('.lectures').addClass('lectures--active');
+  $('.lectures__item').addClass('lectures__item--active');
+});
+  
+$('.events__button--list').on('click', function (){
+  $('.lectures').removeClass('lectures--active');
+  $('.lectures__item').removeClass('lectures__item--active');
+});
 
 
   var mixer = mixitup('.courses__list');

@@ -173,12 +173,12 @@ body {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-line-height: 1.5;
+  line-height: 1.5;
 }
 
 .input-email,
 .input-name,
-.input-phone{
+.input-phone {
   border: 1px solid #d7dadd;
   border-radius: 4px;
   padding: 13px 16px;
@@ -207,18 +207,13 @@ line-height: 1.5;
 }
 
 .search {
-  max-width: 315px;
+  position: relative;
   width: 100%;
-  margin-left: auto;
-  
+
   &:hover {
     .search__btn {
       background-color: $c-primary;
     }
-  }
-  
-  &__label{
-    position: relative;
   }
 
   &__input {
@@ -264,4 +259,5 @@ line-height: 1.5;
     mask-repeat: no-repeat;
     transition: background-color 0.3s linear;
   }
+
 }

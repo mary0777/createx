@@ -46,6 +46,12 @@
     line-height: 1.5;
   }
 
+  &__form {
+    max-width: 315px;
+    width: 100%;
+    margin-left: auto;
+  }
+
   &__inner {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 80px;
@@ -111,6 +117,3 @@
     border: 1px solid $c-primary;
   }
 }
-
-
-
