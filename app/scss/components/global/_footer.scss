@@ -261,6 +261,13 @@
       }
     }
 
+    &--contacts{
+      background-color: transparent;
+
+      .social__link{
+        background-color:$c-gray-700;
+      }
+    }
   }
   
   &__link {

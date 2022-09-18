@@ -25,6 +25,20 @@
   &__info {
     max-width: 600px;
     padding-top: 20px;
+    position: relative;
+
+    &--event{
+      &::after{
+        @include pseudo;
+        width: 88px;
+        height: 87px;
+        background-image: url(../../../images/main/shapes.png);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+      }
+    }
+
   }
 
   &__title {
@@ -85,6 +99,17 @@
 
   &__text {
     margin-bottom: 40px;
+  }
+
+  &__logos{
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__logo{
+    &:not(:last-child){
+      margin-right: 40px;
+    }
   }
 
   &__socials {

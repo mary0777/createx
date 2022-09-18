@@ -1,0 +1,96 @@
+.contacts {
+	padding-top: 153px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__info {
+		margin-right: 40px;
+		max-width: 400px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__address {}
+
+	&__list {
+		margin-bottom: 48px;
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 36px;
+		line-height: 1.5;
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+
+		&::before {
+			@include pseudo;
+			width: 24px;
+			height: 24px;
+			top: 5px;
+			left: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&--email {
+			&::before {
+				background-image: url('../../../images/icons/chat-contacts.svg');
+			}
+		}
+
+		&--phone {
+			&::before {
+				background-image: url('../../../images/icons/iPhone--contact.svg');
+			}
+		}
+
+		&--address {
+			&::before {
+				background-image: url('../../../images/icons/outline--contact.svg');
+			}
+		}
+	}
+
+	&__heading {
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		color: $c-gray-700;
+	}
+
+	&__link {
+		font-size: 18px;
+		color: $c-title;
+		outline: transparent;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		transition: color 0.3s linear;
+
+		&:hover {
+			color: $c-primary;
+		}
+
+		&:focus {
+			border: 1px solid $c-primary;
+		}
+	}
+
+	&__follow {
+		display: block;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 24px;
+		color: $c-title;
+		text-transform: uppercase;
+	}
+}

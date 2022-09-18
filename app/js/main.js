@@ -32,8 +32,16 @@ $(function () {
   });
   
 
-  $('.like__list').slick({
+  $('.like__list, .lectures--active').slick({
     slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'<button type="button" class="btn-prev"></button>',
+    nextArrow: '<button type="button" class="btn-next"></button>',
+  });
+
+  $('.lectures--interested').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     prevArrow:'<button type="button" class="btn-prev"></button>',

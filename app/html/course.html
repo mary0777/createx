@@ -5,7 +5,10 @@
 
 <main class="main">
 
-  @include('components/global/_name.html')
+  @include('components/global/_name.html', {
+  "subtitle": "course",
+  "title": "User Experience. Principles of Human-Centered Design"
+  })
   @include('components/global/_about.html')
   @include('components/global/_curator.html')
   @include('components/course/_steps.html')

@@ -3,6 +3,19 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 
+  &--event {
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      width: 55px;
+      height: 75px;
+      right: 90px;
+      background-image: url('../../../images/main/benefit-shapes.png');
+      background-repeat: no-repeat;
+    }
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;

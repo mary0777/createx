@@ -83,6 +83,25 @@
     text-transform: uppercase;
     color: $c-title;
     margin-bottom: 4px;
+
+    &--link{
+      display: inline;
+      color: $c-primary;
+      text-transform: uppercase;
+      text-decoration: underline;
+      outline: transparent;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: color 0.3s linear;
+
+      &:hover{
+        color: $c-title;
+      }
+
+      &:focus{
+        border: 1px solid $c-primary;
+      }
+    }
   }
 
   &__time-price {

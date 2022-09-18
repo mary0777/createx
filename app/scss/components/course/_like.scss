@@ -1,5 +1,10 @@
 .like {
-  padding-top: 120px;
+  padding: 120px 0 180px;
+
+  &--interested{
+    background-image: url('../../../images/main/interested-bg.jpg');
+    background-repeat: no-repeat;
+  }
 
   &__title {
     margin-bottom: 60px;

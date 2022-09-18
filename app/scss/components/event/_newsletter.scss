@@ -1,0 +1,31 @@
+.newsletter {
+  margin-bottom: 120px;
+
+  &__inner {
+    padding: 60px 105px;
+    background-repeat: no-repeat;
+    background-position: 105px center;
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url('../../../images/main/newsletter-bg.jpg');
+      z-index: -1;
+    }
+  }
+
+  &__info {
+    max-width: 600px;
+    margin-left: auto;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+}
