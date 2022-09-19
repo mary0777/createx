@@ -6,12 +6,30 @@
   margin-top: -40px;
   padding: 166px 0 100px;
 
+  &--about {
+    background-image: none;
+    // padding-bottom: 120px;
+    padding: 0 0 120px;
+
+    .team__title {
+      text-align: center;
+    }
+  }
+
   &__title {
     margin-bottom: 60px;
   }
 
   &__inner {
     position: relative;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 30px;
+
   }
 
   &__item {

@@ -12,40 +12,6 @@
 
   &__top {}
 
-  &__filter {
-    display: flex;
-  }
-
-  &__button {
-    &:not(:last-child) {
-      margin-right: 12px;
-    }
-  }
-
-  &__btn {
-    font-weight: 700;
-    border-radius: 4px;
-    padding: 10px 20px;
-    color: $c-gray-600;
-    border: 1px solid transparent;
-    outline: transparent;
-    transition: color 0.3s linear, border 0.5s linear;
-
-    &:hover {
-      color: $c-gray-800;
-    }
-
-    &:focus {
-      border: 1px solid $c-primary;
-    }
-  }
-
-  &__num {
-    font-weight: 900;
-    font-size: 10px;
-    line-height: 1.5;
-  }
-
   &__form {
     max-width: 315px;
     width: 100%;

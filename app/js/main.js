@@ -72,9 +72,10 @@ $('.events__button--list').on('click', function (){
 });
 
 
-  var mixer = mixitup('.courses__list');
-
-
+  var mixer = mixitup('.courses__list, .journal__blog');
+ 
+  
+  
 });
 
 

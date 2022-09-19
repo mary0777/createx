@@ -1,0 +1,38 @@
+.about {
+  padding-top: 152px;
+
+  &__inner {
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 400px;
+  }
+
+  &__info {
+    max-width: 600px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.5;
+    color: $c-title;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-white-l {
+    margin-right: 24px;
+  }
+}

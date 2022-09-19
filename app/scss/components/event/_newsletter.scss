@@ -1,6 +1,19 @@
 .newsletter {
   margin-bottom: 120px;
 
+  &--blog{
+    margin-bottom: 0;
+    background-color: #f4f5f7;
+
+    .newsletter__inner{
+      padding: 0;
+      background-position: left center;
+      min-height: 454px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__inner {
     padding: 60px 105px;
     background-repeat: no-repeat;

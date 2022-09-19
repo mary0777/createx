@@ -20,44 +20,6 @@
     justify-content: center;
   }
 
-  &__video {
-    margin-bottom: 24px;
-    padding-left: 68px;
-    width: fit-content;
-    position: relative;
-
-    &::before {
-      @include pseudo;
-      width: 52px;
-      height: 52px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background-image: url(../../../images/hero/play-btn-small.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-    }
-
-    &::after {
-      @include pseudo;
-      width: 84px;
-      height: 84px;
-      border-radius: 50%;
-      opacity: 0.12;
-      left: -16px;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: background-color 0.3s linear;
-    }
-
-    &:hover {
-      &::after {
-        background-color: $c-primary;
-      }
-    }
-  }
-
   &__title {
     max-width: 495px;
     font-weight: 900;

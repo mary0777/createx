@@ -1,0 +1,97 @@
+.teach {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__item {}
+
+  &__card {
+    flex-direction: column;
+    max-width: 390px;
+    display: block;
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+
+    &--more {
+      background-color: #f4f5f7;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__link {}
+
+  &__img {}
+
+  &__info {
+    padding: 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $c-gray-700;
+    margin-bottom: 20px;
+    @include line-clamp(3);
+  }
+
+  &__check {
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    color: $c-title;
+    padding-right: 42px;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: color .3s linear;
+
+    &::after {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      right: 10px;
+      top: 2px;
+      background-color: #ff3f3a;
+      mask-image: url(../../../images/sprite.svg#arrow-next);
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      transition: background-color .3s linear, transform .3s linear, border .3s linear;
+    }
+
+    &:hover {
+      color: $c-primary;
+
+      &::after {
+        transform: translateX(10px);
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__more {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 242px;
+  }
+}

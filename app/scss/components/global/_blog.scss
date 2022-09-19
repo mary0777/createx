@@ -1,4 +1,4 @@
-.blog {
+.posts {
   padding-top: 120px;
 
   &__top {
@@ -9,11 +9,12 @@
   }
 
   &__title {}
+}
 
-  &__inner {
+  .blog {
     display: flex;
     justify-content: space-between;
-  }
+  
 
   &__item {
     max-width: 390px;
@@ -219,9 +220,10 @@
     display: inline-block;
     position: relative;
     color: $c-title;
-    padding-right: 32px;
+    padding-right: 42px;
     font-weight: 700;
     outline: transparent;
+    border: 1px solid transparent;
     border-radius: 4px;
     transition: color 0.3s linear;
 
@@ -229,7 +231,7 @@
       @include pseudo;
       width: 24px;
       height: 24px;
-      right: 0;
+      right: 10px;
       top: 2px;
       background-color: $c-primary;
       mask-image: url('../../../images/sprite.svg#arrow-next');
@@ -242,7 +244,6 @@
       color: $c-primary;
 
       &::after{
-        background-color: $c-gray-700;
         transform: translateX(10px);
       }
     }

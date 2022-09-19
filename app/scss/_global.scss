@@ -329,3 +329,77 @@ body {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+
+
+.video {
+  display: block;
+  margin-bottom: 24px;
+  padding-left: 68px;
+  width: fit-content;
+  outline: transparent;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    width: 52px;
+    height: 52px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../../../images/hero/play-btn-small.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &::after {
+    @include pseudo;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    opacity: 0.12;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s linear;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $c-primary;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  &__button {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: $c-gray-600;
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: color 0.3s linear, border 0.5s linear;
+
+    &:hover {
+      color: $c-gray-800;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__num {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
