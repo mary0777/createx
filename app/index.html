@@ -54,13 +54,185 @@
           </a>
         </li>
       </ul>
+
       <div class="menu__btn">
         <a class="link link-l menu__link-l" href="#">
           Get consultation
         </a>
-        <a class="menu__sign" href="#">
+        <a class="menu__sign" href="#sign-in">
           Log in / Register
         </a>
+
+        <form id="sign-in" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign in
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Sign in to your account using email and password provided during registration.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-field" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-field" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Keep me signed in
+              </label>
+              <a class="sign__password" href="#">
+                Forgot password?
+              </a>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign in
+            </button>
+            <span class="sign__account">
+              Don't have an account?
+              <a class="sign__register" href="#sign-up">
+                Sign up
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+        <form id="sign-up" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign up
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Registration takes less than a minute but gives you full control over your studying.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="name">
+                  Full Name
+                </label>
+                <input class="input-email sign__input" type="text" id="name" name="name" placeholder="Your full name"
+                  required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password" name="password" value="secret"
+                  required="required">
+                <span toggle="#password" class="sign__eye"></span>
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Confirm Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-confirm" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-confirm" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Remember me
+              </label>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign up
+            </button>
+            <span class="sign__account">
+              Already have an account?
+              <a class="sign__register" href="#sign-in">
+                Sign in
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
       </div>
     </nav>
   </div>
@@ -1140,7 +1312,7 @@
             <li class="social__item">
               <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
                 <span class="sr-only">
-                  Перейти на нашу страницу в linked-I
+                  Перейти на нашу страницу в linked-In
                 </span>
               </a>
             </li>

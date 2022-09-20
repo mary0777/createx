@@ -125,3 +125,33 @@ var x = setInterval(function () {
     document.getElementById('second').innerHTML = "0";
   }
 }, 1000);
+
+$(document).ready(function() {
+	$('.menu__sign, .sign__register').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+});
+
+
+$(".sign__eye").click(function() {
+
+  $(this).toggleClass("sign__eye--close");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
