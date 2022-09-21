@@ -31,6 +31,14 @@
     color: $c-title;
   }
 
+  &__blog{
+    margin-bottom: 80px;
+
+    .blog__item{
+      max-width: 100%;
+    }
+  }
+
   .slick-current {
     .courses-card {
       border: 1px solid $c-primary;

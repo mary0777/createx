@@ -40,7 +40,7 @@ $(function () {
     nextArrow: '<button type="button" class="btn-next"></button>',
   });
 
-  $('.lectures--interested').slick({
+  $('.lectures--interested, .like__blog').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
