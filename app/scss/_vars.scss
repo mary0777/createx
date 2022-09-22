@@ -3,7 +3,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  } @else {
+  }
+
+  @else {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -14,11 +16,36 @@
 
 // @include line-clamp(3);
 
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
   content: $content;
   display: $display;
   position: $pos;
 }
+
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin h($height) {
+  @media (max-height: #{$height}px) {
+    @content;
+  }
+}
+
+@mixin burger {
+  width: $burgerWidth;
+  height: $burgerHeight;
+  position: relative;
+  color: $burgerColor;
+}
+
+$r-sm: 576;
+$h-sm: 576;
+$r-md: 768;
+$r-lg: 992;
+$r-xl: 1200;
 
 
 $c-default: #424551;
@@ -34,3 +61,9 @@ $c-management:#5a87fc;
 $c-recruting:#f89828;
 $c-design:#f52f6e;
 $c-development:#7772f1;
+
+
+$burgerWidth: 30px;
+$burgerHeight: 20px;
+$burgerLineHeight: 2px;
+$burgerColor: $c-default;

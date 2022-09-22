@@ -15,6 +15,20 @@ body {
   flex-direction: column;
 }
 
+.lock {
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0, 0.5);
+    }
+  }
+
 .main {
   // padding-top: 91px;
   flex: 1 1 auto;
@@ -72,7 +86,7 @@ body {
   border: 1px solid transparent;
   outline: transparent;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
   transition: color 0.3s linear, background 3s ease, border 0.3s linear;
 
   &::before {
@@ -127,7 +141,7 @@ body {
   border-radius: 4px;
   border: 1px solid $c-primary;
   outline: transparent;
-  z-index: 1;
+  // z-index: 1;
   transition: color 0.3s linear, background 0.3s ease, border 0.3s linear;
 
   &::before {
@@ -331,7 +345,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 
-
 .video {
   display: block;
   margin-bottom: 24px;
@@ -339,6 +352,10 @@ body {
   width: fit-content;
   outline: transparent;
   position: relative;
+
+  @include h($h-sm){
+    padding-left: 50px;
+  }
 
   &::before {
     @include pseudo;
@@ -351,6 +368,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+
+    @include h($h-sm){
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -363,6 +385,12 @@ body {
     top: 50%;
     transform: translateY(-50%);
     transition: background-color 0.3s linear;
+
+    @include h($h-sm){
+      width: 60px;
+      height: 60px;
+      left: -10px;
+    }
   }
 
   &:hover {
