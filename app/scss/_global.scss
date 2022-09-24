@@ -32,10 +32,12 @@ body {
   }
 
   .link,
-    .link-white,
-    .workshops{
-      z-index: 0;
-    }
+  .link-white,
+  .workshops,
+  .createx__info,
+  .question__info {
+    z-index: 0;
+  }
 }
 
 .main {
@@ -264,7 +266,7 @@ body {
   }
 
   @include r($r-md) {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -438,6 +440,11 @@ body {
 .filter {
   display: flex;
 
+  @include r($r-lg) {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+  }
+
   &__button {
     &:not(:last-child) {
       margin-right: 12px;
@@ -449,6 +456,7 @@ body {
     border-radius: 4px;
     padding: 10px 20px;
     color: $c-gray-600;
+    white-space: nowrap;
     border: 1px solid transparent;
     outline: transparent;
     transition: color 0.3s linear, border 0.5s linear;

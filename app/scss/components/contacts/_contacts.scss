@@ -1,25 +1,55 @@
 .contacts {
 	padding-top: 153px;
 
+	@include r($r-lg) {
+		padding-top: 110px;
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+
+		@include r($r-lg) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
 	}
 
 	&__info {
 		margin-right: 40px;
 		max-width: 400px;
+
+		@include r($r-lg) {
+			margin-right: 0;
+			max-width: 100%;
+		}
 	}
 
 	&__title {
 		margin-bottom: 40px;
+
+		@include r($r-sm) {
+			margin-bottom: 30px;
+		}
 	}
 
-	&__address {}
+	&__address {
+		@include r($r-lg) {
+			margin-bottom: 20px;
+		}
+	}
 
 	&__list {
 		margin-bottom: 48px;
+
+		@include r($r-lg) {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px 30px;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__item {
@@ -29,6 +59,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 24px;
+
+			@include r($r-lg) {
+				margin-bottom: 0;
+			}
 		}
 
 		&::before {
@@ -92,5 +126,23 @@
 		margin-bottom: 24px;
 		color: $c-title;
 		text-transform: uppercase;
+
+		@include r($r-lg) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__iframe {
+		@include r($r-lg) {
+			margin: 0 auto;
+		}
+
+		@include r($r-md) {
+			width: 100%;
+		}
+
+		@include r($r-sm) {
+			height: 280px;
+		}
 	}
 }

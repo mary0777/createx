@@ -56,6 +56,10 @@
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    @include r($r-sm){
+      margin-bottom: 10px;
+    }
   }
 
   &__slide {
