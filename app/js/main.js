@@ -43,7 +43,33 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:'<button type="button" class="btn-prev"></button>',
-    nextArrow:'<button type="button" class="btn-next"></button>',
+    nextArrow: '<button type="button" class="btn-next"></button>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+          variableWidth: true
+        }
+      },
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+          variableWidth: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true
+        }
+      }
+    ]
   });
 
 
@@ -55,6 +81,14 @@ $(function () {
     nextArrow: '<button type="button" class="btn-next"></button>',
     dots: true,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
   
 
@@ -96,6 +130,11 @@ $('.events__button--list').on('click', function (){
   $('.lectures').removeClass('lectures--active');
   $('.lectures__item').removeClass('lectures__item--active');
 });
+  
+  $('.footer__slide').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__slide--active');
+  });
 
 
   var mixer = mixitup('.courses__list, .journal__blog');

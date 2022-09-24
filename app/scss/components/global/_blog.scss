@@ -1,27 +1,32 @@
 .posts {
   padding-top: 120px;
 
+  @include r($r-md) {
+    padding-top: 50px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: flex-end;
     margin-bottom: 60px;
-  }
 
-  &__title {}
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
-  .blog {
-    display: flex;
-    justify-content: space-between;
-  
+.blog {
+  display: flex;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__item {
     max-width: 390px;
-
-    &:not(:last-child){
-      margin-right: 20px;
-    }
 
     &--podcast {
       .blog__images {
@@ -70,7 +75,7 @@
 
     &::before {
       position: absolute;
-      padding: 0 8px 0 28px; 
+      padding: 0 8px 0 28px;
       top: 12px;
       left: 12px;
       border-radius: 4px;
@@ -87,24 +92,32 @@
       background-repeat: no-repeat;
     }
 
-    &:hover{
-      &::before{
+    &:hover {
+      &::before {
         background-color: $c-danger;
       }
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
     }
   }
 
   &__img {
     object-fit: cover;
+
+    @include r($r-sm) {
+      width: 100%;
+      height: 100%;
+    }
+
   }
 
   &__list {
     display: flex;
     margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   &__descr {
@@ -112,12 +125,12 @@
     line-height: 1.5;
     color: $c-gray-700;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       padding-right: 12px;
       border-right: 1px solid #787A80;
     }
 
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-left: 12px;
     }
   }
@@ -129,11 +142,11 @@
     outline: transparent;
     transition: background-color 0.3s linear;
 
-    &:hover{
+    &:hover {
       color: $c-primary;
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
     }
   }
@@ -169,15 +182,15 @@
       }
     }
 
-    &:hover{
+    &:hover {
       color: $c-primary;
 
-      &::before{
+      &::before {
         background-color: $c-primary;
       }
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
     }
   }
@@ -189,7 +202,7 @@
     border: 1px solid transparent;
     outline: transparent;
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
     }
   }
@@ -202,18 +215,27 @@
     border-radius: 4px;
     transition: color 0.3s linear, border 0.3s linear;
 
-    &:hover{
+    &:hover {
       color: $c-primary;
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
+    }
+
+    @include r($r-sm) {
+      font-size: 16px;
     }
   }
 
   &__text {
     @include line-clamp(2);
     margin-bottom: 16px;
+
+    @include r($r-sm) {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
   }
 
   &__more {
@@ -240,15 +262,15 @@
       transition: background-color 0.3s linear, transform 0.3s linear, border 0.3s linear;
     }
 
-    &:hover{
+    &:hover {
       color: $c-primary;
 
-      &::after{
+      &::after {
         transform: translateX(10px);
       }
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $c-primary;
     }
   }

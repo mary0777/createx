@@ -5,17 +5,18 @@
   background-size: cover;
   padding: 80px 0 100px;
 
+  @include r($r-md) {
+    padding: 0px 0 65px;
+  }
+
   &__title {
     margin-bottom: 60px;
     text-align: center;
-  }
 
-  &__inner {
-    // margin-bottom: 60px;
-    // padding-bottom: 60px;
-    // position: relative;
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
   }
-
 
   &__item {
     max-width: 1020px;
@@ -25,6 +26,10 @@
     padding: 64px 105px;
     display: block !important;
     margin: 0 auto;
+
+    @include r($r-md) {
+      padding: 30px 15px;
+    }
   }
 
   &__figure {
@@ -39,6 +44,10 @@
       left: 0;
       background-image: url(../../../images/icons/braces.png);
     }
+
+    @include r($r-sm) {
+      padding-left: 45px;
+    }
   }
 
   &__blockquote {
@@ -46,11 +55,20 @@
     line-height: 1.5;
     color: $c-gray-800;
     margin-bottom: 24px;
+
+    @include r($r-md) {
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
   }
 
   &__descr {
     display: flex;
     align-items: center;
+
+    @include r($r-sm) {
+      display: block;
+    }
   }
 
   &__img {
@@ -72,8 +90,12 @@
     margin-top: 4px;
   }
 
-  .slick-slide{
+  .slick-slide {
     margin-bottom: 45px;
+
+    @include r($r-md) {
+      margin-bottom: 20px;
+    }
   }
 
   .btn-next,
@@ -142,20 +164,20 @@
         margin-right: 12px;
       }
 
-      &:hover{
-        button{
+      &:hover {
+        button {
           border: 3px solid $c-gray-800;
         }
       }
     }
 
-    .slick-active{
-      button{
+    .slick-active {
+      button {
         border: 3px solid $c-gray-800;
       }
     }
 
-    button{
+    button {
       font-size: 0;
       width: 30px;
       border: 3px solid #B3B7BC;

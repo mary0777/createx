@@ -39,7 +39,6 @@
 
     &--active {
       transform: translateY(0);
-      overflow: scroll;
     }
   }
 
@@ -87,6 +86,10 @@
     @include r($r-lg) {
       padding: 10px 0;
       display: block;
+    }
+
+    @include h($h-sm) {
+      padding: 5px 0;
     }
   }
 
@@ -188,7 +191,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: $burgerLineHeight; //указываем расстояние между линиями
+    height: $burgerLineHeight;
     background-color: currentColor;
     transition: transform 0.3s ease-in-out;
   }
@@ -213,11 +216,12 @@
   }
 
   &--active {
-
+    
     .burger__line {
       transform: scale(0);
       transition: transform 0.3s ease-in-out;
     }
+
 
     &::before {
       transform: rotate(45deg);

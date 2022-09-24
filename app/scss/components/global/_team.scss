@@ -6,9 +6,12 @@
   margin-top: -40px;
   padding: 166px 0 100px;
 
+  @include r($r-sm) {
+    padding: 115px 0 50px;
+  }
+
   &--about {
     background-image: none;
-    // padding-bottom: 120px;
     padding: 0 0 120px;
 
     .team__title {
@@ -29,15 +32,12 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 60px;
     column-gap: 30px;
-
   }
 
   &__item {
     max-width: 285px;
-
+    margin-right: 15px;
   }
-
-  &__figure {}
 
   &__image {
     position: relative;
@@ -95,8 +95,6 @@
     margin-top: 4px;
   }
 
-  &__social {}
-
   .btn-next,
   .btn-prev {
     position: absolute;
@@ -113,6 +111,10 @@
     border: 1px solid transparent;
     z-index: 1;
     transition: background-color 0.3s linear, border 0.3s linear;
+
+    @include r($r-sm) {
+      top: -60px;
+    }
 
     &::before {
       @include pseudo;
@@ -148,6 +150,11 @@
     &::before {
       mask-image: url('../images/sprite.svg#arrow-prev');
     }
+  }
+
+  .slick-slide {
+    max-width: 285px;
+    margin-right: 21px;
   }
 }
 

@@ -2,6 +2,7 @@
   padding: 80px 0;
   position: relative;
   background-image: url(../../../images/main/lectures-bg.jpg);
+  z-index: 1;
 
   &::before {
     @include pseudo;
@@ -10,6 +11,7 @@
     bottom: 0;
     background-image: url(../../../images/main/dots.png);
     background-repeat: no-repeat;
+    z-index: -1;
   }
 
   &::after {
@@ -20,17 +22,28 @@
     right: -60px;
     background-image: url(../../../images/main/circles.png);
     background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @include r($r-md) {
+    padding: 50px 0;
   }
 
   &__title {
     text-align: center;
     margin-bottom: 60px;
+
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__btn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 
   &__more {
@@ -39,6 +52,11 @@
     line-height: 1.5;
     color: $c-title;
     margin-right: 40px;
+
+    @include r($r-sm) {
+      margin-right: 0;
+      font-size: 20px;
+    }
   }
 }
 
@@ -49,6 +67,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  @include r($r-sm) {
+    margin-bottom: 30px;
   }
 
   &__item {
@@ -97,6 +119,21 @@
         max-width: 100%;
         text-align: center;
         margin-top: auto;
+      }
+    }
+
+    @include r($r-md) {
+      display: flex;
+      flex-direction: column;
+      max-width: 390px;
+      min-height: 323px;
+      border: 1px solid #E5E8ED;
+      width: 100%;
+      padding: 24px;
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
       }
     }
   }
@@ -158,6 +195,16 @@
     line-height: 1.5;
     color: $c-title;
     margin-right: 40px;
+
+    @include r($r-md) {
+      font-size: 18px;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    @include r($r-sm) {
+      font-size: 16px;
+    }
   }
 
   &__type {
@@ -173,5 +220,11 @@
     margin-left: auto;
     max-width: 136px;
     width: 100%;
+
+    @include r($r-md) {
+      max-width: 100%;
+      text-align: center;
+      margin-top: auto;
+    }
   }
 }
