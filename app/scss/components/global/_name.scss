@@ -5,6 +5,14 @@
   background-size: cover;
   padding: 213px 0 120px 0;
 
+  @include r($r-lg){
+    padding: 140px 0 80px 0;
+  }
+
+  @include r($r-sm){
+    padding: 100px 0 60px 0;
+    }
+
   &__title {
     max-width: 1020px;
     font-weight: 900;
@@ -13,6 +21,15 @@
     color: $c-title;
     text-align: center;
     margin: 0 auto;
+
+    @include r($r-md){
+    max-width: 100%;
+    font-size: 34px;
+    }
+
+    @include r($r-sm){
+      font-size: 23px;
+      }
   }
 
   &__subtitle {
@@ -24,5 +41,9 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 12px;
+
+    @include r($r-sm){
+      font-size: 14px;
+      }
   }
 }

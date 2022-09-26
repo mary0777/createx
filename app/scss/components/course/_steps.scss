@@ -14,18 +14,39 @@
   &__titles {
     margin-bottom: 60px;
     text-align: center;
+
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 20px;
+
+    @include r($r-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r($r-sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__item {
     max-width: 285px;
 
+    @include r($r-sm) {
+      max-width: 100%;
+    }
+
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include r($r-sm) {
+        margin-right: 0;
+      }
     }
 
     &:hover {
@@ -76,7 +97,12 @@
       top: 50%;
       right: -200px;
       transform: translateY(-50%);
-      border-bottom: 1px dashed #D7DADD;
+      border-bottom: 1px dashed #d7dadd;
+
+      @include r($r-sm) {
+        width: 175px;
+        right: -175px;
+      }
     }
 
     &--display {

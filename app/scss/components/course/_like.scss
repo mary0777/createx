@@ -1,7 +1,15 @@
 .like {
   padding: 120px 0 180px;
 
-  &--interested{
+  @include r($r-lg) {
+    padding: 80px 0 80px;
+  }
+
+  @include r($r-md) {
+    padding: 50px 0 50px;
+  }
+
+  &--interested {
     background-image: url('../../../images/main/interested-bg.jpg');
     background-repeat: no-repeat;
   }
@@ -10,17 +18,20 @@
     margin-bottom: 60px;
   }
 
-  &__list {
-  }
-
   &__item {
     padding-bottom: 80px;
+
+    @include r($r-sm) {
+      padding-bottom: 30px;
+    }
   }
 
   &__btn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 15px;
   }
 
   &__more {
@@ -29,19 +40,34 @@
     font-size: 28px;
     line-height: 1.5;
     color: $c-title;
+
+    @include r($r-sm) {
+      font-size: 18px;
+      margin-right: 0;
+    }
   }
 
-  &__blog{
+  &__blog {
     margin-bottom: 80px;
 
-    .blog__item{
+    .blog__item {
       max-width: 100%;
     }
   }
 
   .slick-current {
-    .courses-card {
+
+    .courses-card,
+    .lectures__item {
       border: 1px solid $c-primary;
+    }
+  }
+
+  .slick-slide {
+    margin-right: 10px;
+
+    @include r($r-md) {
+      max-width: 500px;
     }
   }
 
@@ -61,6 +87,10 @@
     border: 1px solid transparent;
     z-index: 1;
     transition: background-color 0.3s linear, border 0.3s linear;
+
+    @include r($r-sm) {
+      top: -56px;
+    }
 
     &::before {
       @include pseudo;

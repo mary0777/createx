@@ -67,6 +67,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    @include r($r-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r($r-sm) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
   }
 
   @include r($r-sm) {
@@ -96,6 +105,10 @@
       min-height: 323px;
       width: 100%;
       padding: 24px;
+
+      @include r($r-lg) {
+       max-width: 100%;
+      }
 
       &:not(:last-child) {
         margin-bottom: 0;

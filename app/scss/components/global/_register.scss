@@ -4,17 +4,17 @@
   background-repeat: no-repeat;
   background-position: top center;
 
-  &--request{
+  &--request {
     background-image: none;
     padding: 0;
     margin-bottom: 120px;
 
-    .register__inner{
+    .register__inner {
       background-position: right center;
       min-height: 468px;
     }
 
-    .register__info{
+    .register__info {
       margin-left: 0;
       max-width: 510px;
     }
@@ -23,19 +23,27 @@
   &__inner {
     background-repeat: no-repeat;
     background-position: left center;
+    background-size: contain;
     min-height: 550px;
+
+    @include r($r-xl) {
+      background-size: 0;
+    }
   }
 
   &__info {
     max-width: 495px;
     margin-left: auto;
+
+    @include r($r-xl) {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
   }
-
-  &__form {}
 
   &__list {
     margin-bottom: 40px;
@@ -46,8 +54,6 @@
       margin-bottom: 24px;
     }
   }
-
-  &__label {}
 
   &__input {
     max-width: 495px;
@@ -60,7 +66,7 @@
     margin-bottom: 24px;
   }
 
-  &__comment{
+  &__comment {
     display: block;
   }
 }

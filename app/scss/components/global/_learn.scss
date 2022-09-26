@@ -1,18 +1,53 @@
 .learn {
   margin-bottom: 120px;
 
+  @include r($r-xl) {
+    margin-bottom: 80px;
+  }
+
+  @include r($r-md) {
+    margin-bottom: 50px;
+  }
+
   &__inner {
+    display: flex;
     background-repeat: no-repeat;
     background-position: right;
     min-height: 555px;
+    position: relative;
+
+    @include r($r-xl) {
+      &::before {
+        @include pseudo;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.75;
+      }
+    }
+
+    @include r($r-sm) {
+      background-position: center center;
+      min-height: auto;
+    }
   }
 
   &__info {
     max-width: 600px;
     margin-right: 40px;
+    z-index: 1;
+
+    @include r($r-xl) {
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
 
   &__title {
     margin-bottom: 60px;
+
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
   }
 }

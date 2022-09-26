@@ -1,6 +1,10 @@
 .curator {
   padding-top: 66px;
 
+  @include r($r-lg) {
+    padding-top: 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -16,10 +20,25 @@
       top: -66px;
       z-index: -1;
     }
+
+    @include r($r-lg) {
+      flex-direction: column;
+    }
   }
 
   &__img {
     margin-right: 40px;
+    object-fit: contain;
+
+    @include r($r-lg) {
+      order: 1;
+      margin: 0 auto;
+    }
+
+    @include r($r-sm) {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__info {
@@ -27,8 +46,8 @@
     padding-top: 20px;
     position: relative;
 
-    &--event{
-      &::after{
+    &--event {
+      &::after {
         @include pseudo;
         width: 88px;
         height: 87px;
@@ -39,6 +58,10 @@
       }
     }
 
+    @include r($r-lg) {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -51,10 +74,19 @@
     line-height: 1.5;
     color: $c-gray-700;
     margin-bottom: 32px;
+
+    @include r($r-sm) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
     margin-bottom: 32px;
+
+    @include r($r-sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
@@ -99,15 +131,20 @@
 
   &__text {
     margin-bottom: 40px;
+
+    @include r($r-sm) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
   }
 
-  &__logos{
+  &__logos {
     display: flex;
     margin-bottom: 40px;
   }
 
-  &__logo{
-    &:not(:last-child){
+  &__logo {
+    &:not(:last-child) {
       margin-right: 40px;
     }
   }
