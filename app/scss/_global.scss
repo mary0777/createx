@@ -31,13 +31,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .link,
-  .link-white,
-  .workshops,
-  .createx__info,
-  .question__info,
-  .steps__num,
-  .jq-selectbox {
+  .main{
     z-index: 0;
   }
 }
@@ -234,6 +228,10 @@ body {
 .label-email {
   display: flex;
   margin-bottom: 24px;
+  
+  @include r($r-md) {
+    flex-wrap: wrap;
+   }
 }
 
 .input-email,
@@ -342,6 +340,10 @@ body {
   padding-left: 28px;
   transition: all .4s ease;
   cursor: pointer;
+
+  @include r($r-sm) {
+    font-size: 14px;
+  }
 
   &::before {
     @include pseudo;

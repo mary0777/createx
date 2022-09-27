@@ -6,6 +6,10 @@
   &__title {
     margin-bottom: 60px;
     text-align: center;
+
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__inner {
@@ -13,9 +17,35 @@
     grid-template-columns: repeat(6, 1fr);
     row-gap: 40px;
     column-gap: 102px;
+
+    @include r($r-xl) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include r($r-lg) {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+      column-gap: 80px;
+    }
+
+    @include r($r-md) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 20px;
+      column-gap: 60px;
+    }
+
+    @include r($r-sm) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 10px;
+      column-gap: 30px;
+    }
   }
 
-  &__item {}
+  &__item {
+    @include r($r-md) {
+      margin: 0 auto;
+    }
+  }
 
   &__link {
     display: block;

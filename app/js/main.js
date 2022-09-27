@@ -116,6 +116,22 @@ $(function () {
     arrows: true,
     prevArrow:'<button type="button" class="btn-prev"></button>',
     nextArrow: '<button type="button" class="btn-next"></button>',
+    responsive: [
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true
+        }
+      }
+    ]
   });
 
 

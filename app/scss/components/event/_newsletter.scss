@@ -1,25 +1,64 @@
 .newsletter {
   margin-bottom: 120px;
 
-  &--blog{
+  @include r($r-md) {
+    margin-bottom: 50px;
+  }
+
+  &--blog {
     margin-bottom: 0;
     background-color: #f4f5f7;
 
-    .newsletter__inner{
+    .newsletter__inner {
       padding: 0;
       background-position: left center;
       min-height: 454px;
       display: flex;
       align-items: center;
+      position: relative;
+
+      &::before{
+        display: none;
+      }
+
+      @include r($r-xl) {
+        &::after{
+          @include pseudo;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .newsletter__info{
+      @include r($r-xl){
+        max-width: 620px;
+        padding: 0 20px;
+      }
+
+      @include r($r-lg){
+       margin: 0 auto;
+      }
     }
   }
 
   &__inner {
     padding: 60px 105px;
+    display: flex;
     background-repeat: no-repeat;
     background-position: 105px center;
     border-radius: 4px;
     position: relative;
+
+    @include r($r-lg) {
+      padding: 30px 50px;
+    }
+
+    @include r($r-sm) {
+      padding: 30px 15px;
+    }
 
     &::before {
       @include pseudo;
@@ -29,16 +68,47 @@
       left: 0;
       background-image: url('../../../images/main/newsletter-bg.jpg');
       z-index: -1;
+
+      @include r($r-xl) {
+        background-color: #fff;
+        opacity: 0.8;
+        z-index: 0;
+      }
     }
   }
 
   &__info {
     max-width: 600px;
     margin-left: auto;
+    z-index: 1;
   }
 
   &__title {
     font-size: 32px;
     margin-bottom: 48px;
+
+    @include r($r-lg) {
+      margin-bottom: 38px;
+    }
+
+    @include r($r-sm) {
+      font-size: 25px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__input-email {
+    margin-right: 23px;
+
+    @include r($r-md) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link-l {
+    @include r($r-md) {
+      width: 100%;
+    }
   }
 }

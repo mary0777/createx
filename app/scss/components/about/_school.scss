@@ -1,18 +1,43 @@
 .school {
   padding-top: 152px;
 
+  @include r($r-sm) {
+    padding-top: 100px;
+  }
+
   &__inner {
     background-repeat: no-repeat;
     background-position: right center;
     min-height: 400px;
+    display: flex;
+    position: relative;
+
+    @include r($r-lg) {
+      &::before {
+        @include pseudo;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.7;
+      }
+    }
+
+    @include r($r-sm) {
+      background-position: center;
+    }
   }
 
   &__info {
     max-width: 600px;
+    z-index: 1;
   }
 
   &__title {
     margin-bottom: 48px;
+
+    @include r($r-sm) {
+      margin-bottom: 30px;
+    }
   }
 
   &__heading {
@@ -25,14 +50,36 @@
 
   &__text {
     margin-bottom: 60px;
+
+    @include r($r-sm) {
+      margin-bottom: 30px;
+    }
   }
 
   &__btn {
     display: flex;
     align-items: center;
+
+    @include r($r-sm) {
+      flex-direction: column;
+    }
   }
 
   &__link-white-l {
     margin-right: 24px;
+
+    @include r($r-sm) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }
+
+  &__link-l {
+    @include r($r-sm) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

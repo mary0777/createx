@@ -69,6 +69,10 @@
     @include r($r-md) {
       max-width: 500px;
     }
+
+    @include r($r-sm) {
+      max-width: 290px;
+    }
   }
 
   .btn-next,

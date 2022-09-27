@@ -9,14 +9,36 @@
     padding: 0;
     margin-bottom: 120px;
 
+    @include r($r-sm) {
+      margin-bottom: 50px;
+    }
+
     .register__inner {
+      display: flex;
       background-position: right center;
+      background-size: auto;
       min-height: 468px;
+      position: relative;
+
+      @include r($r-xl) {
+        &::before {
+          @include pseudo;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          opacity: 0.8;
+        }
+      }
+
+      @include r($r-sm) {
+        background-position: center;
+      }
     }
 
     .register__info {
       margin-left: 0;
       max-width: 510px;
+      z-index: 1;
     }
   }
 

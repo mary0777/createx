@@ -146,6 +146,10 @@
   &__logo {
     &:not(:last-child) {
       margin-right: 40px;
+
+      @include r($r-sm) {
+        margin-right: 15px;
+      }
     }
   }
 
