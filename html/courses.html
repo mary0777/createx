@@ -1,0 +1,16 @@
+@include('components/global/_head.html', {
+"page": " | Courses"
+})
+@include('components/courses/_header.html')
+
+<main class="main">
+
+  @include('components/courses/_courses.html')
+  @include('components/global/_reviews.html')
+  @include('components/courses/_certificate.html')
+  @include('components/global/_subscribe.html')
+  @include('components/global/_footer.html')
+
+</main>
+
+@include('components/global/_footer-scripts.html')

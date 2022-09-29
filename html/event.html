@@ -1,0 +1,22 @@
+@include('components/global/_head.html', {
+"page": " | Event"
+})
+@include('components/event/_header.html')
+
+<main class="main">
+
+  @include('components/global/_name.html', {
+  "subtitle": "Online lecture",
+  "title": "Formation of the organizational structure of the company in the face of uncertainty"
+  })
+  @include('components/event/_theme.html')
+  @include('components/event/_curator.html')
+  @include('components/event/_benefit.html')
+  @include('components/event/_newsletter.html')
+  @include('components/event/_request.html')
+  @include('components/event/_interested.html')
+  @include('components/global/_footer.html')
+
+</main>
+
+@include('components/global/_footer-scripts.html')

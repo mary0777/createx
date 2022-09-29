@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Createx  | About</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ff0000">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="app/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+  <div class="wrapper">
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="../../../images/logo.png" alt="Logo" width="120" height="22">
+      </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link menu__link--active">
+            About Us
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="courses.html">
+            Courses
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="events.html">
+            Events
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">
+            Contacts
+          </a>
+        </li>
+
+        <li class="menu__item menu__item--burger">
+          <a class="link link-l menu__link-l" href="#">
+            Get consultation
+          </a>
+        </li>
+
+        <li class="menu__item menu__item--burger">
+          <a class="menu__sign" href="#sign-in">
+            Log in / Register
+          </a>
+        </li>
+      </ul>
+      <div class="menu__btn">
+        <a class="link link-l menu__link-l" href="#">
+          Get consultation
+        </a>
+        <a class="menu__sign" href="#sign-in">
+          Log in / Register
+        </a>
+
+        <form id="sign-in" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign in
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Sign in to your account using email and password provided during registration.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-field" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-field" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Keep me signed in
+              </label>
+              <a class="sign__password" href="#">
+                Forgot password?
+              </a>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign in
+            </button>
+            <span class="sign__account">
+              Don't have an account?
+              <a class="sign__register" href="#sign-up">
+                Sign up
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+        <form id="sign-up" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign up
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Registration takes less than a minute but gives you full control over your studying.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="name">
+                  Full Name
+                </label>
+                <input class="input-email sign__input" type="text" id="name" name="name" placeholder="Your full name"
+                  required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password" name="password" value="secret"
+                  required="required">
+                <span toggle="#password" class="sign__eye"></span>
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Confirm Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-confirm" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-confirm" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Remember me
+              </label>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign up
+            </button>
+            <span class="sign__account">
+              Already have an account?
+              <a class="sign__register" href="#sign-in">
+                Sign in
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+      <button class="burger" type="button">
+        <span class="burger__line"></span>
+        <span class="sr-only">Открыть меню</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="section school">
+  <div class="container">
+    <div class="school__inner" style="background-image: url('../../../images/main/about-bg.png');">
+      <h1 class="sr-only">About us</h1>
+      <div class="school__info">
+        <h2 class="title school__title">
+          <span class="subtitle">
+            About us
+          </span>
+          Createx Online School
+        </h2>
+        <div class="school__heading">
+          Createx Online School is a leader in online studying. We have lots of courses and programs from the main
+          market experts.
+        </div>
+        <div class="school__text">
+          <p>
+            We provide relevant approaches to online learning, internships and employment in the largest companies
+            in the country. Our educational programs help you get a new specialty from scratch. During your studies, we
+            will help you find a job. Check the courses and online events that we organise.
+          </p>
+        </div>
+        <div class="school__btn">
+          <a class="link-white link-white-l school__link-white-l" href="events.html">
+            Explore events
+          </a>
+          <a class="link link-l school__link-l" href="courses.html">
+            Browse courses
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="section counter">
+  <div class="container">
+    <a class="video counter__video" data-fancybox="video-gallery" href="https://youtu.be/WY8sDvZdWEA">
+      Watch Video
+    </a>
+    <div class="counter__inner" style="background-image: url('../../../images/main/counter-bg.jpg');">
+      <ul class="counter__list">
+        <li class="counter__item">
+          <span class="counter__num">
+            1200
+          </span>
+          students graduated
+        </li>
+        <li class="counter__item">
+          <span class="counter__num">
+            84
+          </span>
+          completed courses
+        </li>
+        <li class="counter__item">
+          <span class="counter__num">
+            16
+          </span>
+          qualified tutors
+        </li>
+        <li class="counter__item">
+          <span class="counter__num">
+            5
+          </span>
+          years of experience
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+  <section class="section values">
+  <div class="container">
+    <h2 class="title values__title">
+      <span class="subtitle">
+        We always stand for
+      </span>
+      Our core values
+    </h2>
+    <ul class="values__list">
+      <li class="values__item">
+        <h3 class="values__heading values__heading--approach">
+          Structured Approach
+        </h3>
+        <p class="values__text">
+          Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+        </p>
+      </li>
+      <li class="values__item">
+        <h3 class="values__heading values__heading--feedbacks">
+          Professional Feedbacks
+        </h3>
+        <p class="values__text">
+          Culpa nostrud commodo ea consequat reprehenderit aliquip.
+        </p>
+      </li>
+      <li class="values__item">
+        <h3 class="values__heading values__heading--efficiency">
+          Efficiency
+        </h3>
+        <p class="values__text">
+          Viverra scelerisque consequat net. Adipisicing esse consequat.
+        </p>
+      </li>
+      <li class="values__item">
+        <h3 class="values__heading values__heading--shedule">
+          Flexible Shedule
+        </h3>
+        <p class="values__text">
+          Aute eiusmod dolore dolore deserunt veniam ad deserunt.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="section teach">
+  <div class="container">
+    <h2 class="title teach__title">
+      <span class="subtitle">
+        our main directions
+      </span>
+      What do we teach
+    </h2>
+    <ul class="teach__inner">
+      <li class="teach__item">
+        <article class="courses-card courses-card--marketing teach__card">
+          <img class="courses-card__img teach__img" src="../../../images/teach/1.jpg" alt="marketing" width="390"
+            height="200">
+          <div class="courses-card__info teach__info">
+            <p class="courses-card__title teach__text">
+              Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
+              scelerisque consequat.
+            </p>
+            <a class="teach__check" href="courses.html">
+              Check courses
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="teach__item">
+        <article class="courses-card courses-card--management teach__card">
+          <img class="courses-card__img teach__img" src="../../../images/teach/2.jpg" alt="management" width="390"
+            height="200">
+          <div class="courses-card__info teach__info">
+            <p class="courses-card__title teach__text">
+              Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
+              scelerisque consequat.
+            </p>
+            <a class="teach__check" href="courses.html">
+              Check courses
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="teach__item">
+        <article class="courses-card courses-card--recruting teach__card">
+          <img class="courses-card__img teach__img" src="../../../images/teach/3.jpg" alt="recruting" width="390"
+            height="200">
+          <div class="courses-card__info teach__info">
+            <p class="courses-card__title teach__text">
+              Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
+              scelerisque consequat.
+            </p>
+            <a class="teach__check" href="courses.html">
+              Check courses
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="teach__item">
+        <article class="courses-card courses-card--design teach__card">
+          <img class="courses-card__img teach__img" src="../../../images/teach/4.jpg" alt="design" width="390"
+            height="200">
+          <div class="courses-card__info teach__info">
+            <p class="courses-card__title teach__text">
+              Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
+              scelerisque consequat.
+            </p>
+            <a class="teach__check" href="courses.html">
+              Check courses
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="teach__item">
+        <article class="courses-card courses-card--development teach__card">
+          <img class="courses-card__img teach__img" src="../../../images/teach/5.jpg" alt="development" width="390"
+            height="200">
+          <div class="courses-card__info teach__info">
+            <p class="courses-card__title teach__text">
+              Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra
+              scelerisque consequat.
+            </p>
+            <a class="teach__check" href="courses.html">
+              Check courses
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="teach__item">
+        <article class="courses-card courses-card--development teach__card teach__card--more">
+          <span class="teach__more">
+            New studying program coming soon...
+          </span>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="section process">
+  <div class="container">
+    <div class="process__inner" style="background-image: url('../../../images/main/process-bg.png');">
+      <div class="process__info">
+        <h2 class="title process__title">
+          <span class="subtitle">
+            Studying process
+          </span>
+          That’s how we do it
+        </h2>
+        <ul class="process__list">
+          <li class="process__item">
+            <span class="process__step">
+              STEP 1
+            </span>
+            <h3 class="process__heading">
+              Watching online video lectures
+            </h3>
+            <div class="process__text">
+              <p>
+                Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
+                neque.
+              </p>
+            </div>
+          </li>
+          <li class="process__item">
+            <span class="process__step">
+              STEP 2
+            </span>
+            <h3 class="process__heading">
+              Passing test
+            </h3>
+            <div class="process__text">
+              <p>
+                Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin
+                egestas
+                laoreet etiam.
+              </p>
+            </div>
+          </li>
+          <li class="process__item">
+            <span class="process__step">
+              STEP 3
+            </span>
+            <h3 class="process__heading">
+              Curator’s feedback
+            </h3>
+            <div class="process__text">
+              <p>
+                Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat
+                egestas
+                facilisi lobortis.
+              </p>
+            </div>
+          </li>
+          <li class="process__item">
+            <span class="process__step">
+              STEP 4
+            </span>
+            <h3 class="process__heading">
+              Corrections if needed
+            </h3>
+            <div class="process__text">
+              <p>
+                Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="team team--about">
+  <div class="container">
+    <h2 class="title team__title">
+      <span class="subtitle">
+        Best tutors are all here
+      </span>
+      Meet our team
+    </h2>
+    <ul class="team__items">
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/1.png" alt="Ptoho by Dianne Russell" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Dianne Russell в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Dianne Russell в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Dianne Russell в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Dianne Russell
+            <cite class="team__profesion">
+              Founder and CEO
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/2.png" alt="Ptoho by  Jerome Bell" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Jerome Bell в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Jerome Bell в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Jerome Bell в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Jerome Bell
+            <cite class="team__profesion">
+              Founder and Program Director
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/3.png" alt="Ptoho by Kristin Watson" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Kristin Watson в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Kristin Watson в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Kristin Watson в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Kristin Watson
+            <cite class="team__profesion">
+              Marketer, Curator of Marketing Course
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/4.png" alt="Ptoho by Marvin McKinney" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Marvin McKinney в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Marvin McKinney в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Marvin McKinney в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Marvin McKinney
+            <cite class="team__profesion">
+              PM, Curator of Management Course
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/5.png" alt="Ptoho by Leslie Alexander Li" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Leslie Alexander Li в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Leslie Alexander Li в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Leslie Alexander Li в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Leslie Alexander Li
+            <cite class="team__profesion">
+              Curator of HR & Recruting Course
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/6.png" alt="Ptoho by Kathryn Murphy" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Kathryn Murphy в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Kathryn Murphy в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Kathryn Murphy в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Kathryn Murphy
+            <cite class="team__profesion">
+              Analyst and Marketing specialist
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/7.png" alt="Ptoho by Brooklyn Simmons" width="245"
+              height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Brooklyn Simmons в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Brooklyn Simmons в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Brooklyn Simmons в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Brooklyn Simmons
+            <cite class="team__profesion">
+              Curator of Development Course
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li class="team__item">
+        <figure class="team__figure">
+          <div class="team__image">
+            <img class="team__img" src="../../../images/team/8.png" alt="Ptoho by Cody Fisher" width="245" height="320">
+            <ul class="team__social socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                  <span class="sr-only">
+                    Перейти на страницу Cody Fisher в facebook
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                  <span class="sr-only">
+                    Перейти на страницу Cody Fisher в instagram
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                  <span class="sr-only">
+                    Перейти на страницу Cody Fisher в linked-I
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figcaption class="team__name">
+            Cody Fisher
+            <cite class="team__profesion">
+              UX Designer, Curator of Design Course
+            </cite>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="reviews">
+  <div class="container">
+    <h2 class="title reviews__title">
+      <span class="subtitle">
+        TESTIMONIALS
+      </span>
+      What our students say
+    </h2>
+    <ul class="reviews__inner">
+      <li class="reviews__item">
+        <figure class="reviews__figure">
+          <blockquote class="reviews__blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+            tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+          </blockquote>
+          <div class="reviews__descr">
+            <img class="reviews__img" src="../../../images/main/reviews-1.png" alt="Photo by Eleanor Pena" width="72"
+              height="72">
+            <figcaption class="reviews__name">
+              Eleanor Pena
+              <cite class="reviews__profession">
+                Position, Course
+              </cite>
+            </figcaption>
+          </div>
+        </figure>
+      </li>
+      <li class="reviews__item">
+        <figure class="reviews__figure">
+          <blockquote class="reviews__blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+            tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+          </blockquote>
+          <div class="reviews__descr">
+            <img class="reviews__img" src="../../../images/main/reviews-1.png" alt="Photo by Eleanor Pena" width="72"
+              height="72">
+            <figcaption class="reviews__name">
+              Eleanor Pena
+              <cite class="reviews__profession">
+                Position, Course
+              </cite>
+            </figcaption>
+          </div>
+        </figure>
+      </li>
+      <li class="reviews__item">
+        <figure class="reviews__figure">
+          <blockquote class="reviews__blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+            tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+          </blockquote>
+          <div class="reviews__descr">
+            <img class="reviews__img" src="../../../images/main/reviews-1.png" alt="Photo by Eleanor Pena" width="72"
+              height="72">
+            <figcaption class="reviews__name">
+              Eleanor Pena 2
+              <cite class="reviews__profession">
+                Position, Course
+              </cite>
+            </figcaption>
+          </div>
+        </figure>
+      </li>
+      <li class="reviews__item">
+        <figure class="reviews__figure">
+          <blockquote class="reviews__blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+            tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+          </blockquote>
+          <div class="reviews__descr">
+            <img class="reviews__img" src="../../../images/main/reviews-1.png" alt="Photo by Eleanor Pena" width="72"
+              height="72">
+            <figcaption class="reviews__name">
+              Eleanor Pena 3
+              <cite class="reviews__profession">
+                Position, Course
+              </cite>
+            </figcaption>
+          </div>
+        </figure>
+      </li>
+      <li class="reviews__item">
+        <figure class="reviews__figure">
+          <blockquote class="reviews__blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+            tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+          </blockquote>
+          <div class="reviews__descr">
+            <img class="reviews__img" src="../../../images/main/reviews-1.png" alt="Photo by Eleanor Pena" width="72"
+              height="72">
+            <figcaption class="reviews__name">
+              Eleanor Pena 4
+              <cite class="reviews__profession">
+                Position, Course
+              </cite>
+            </figcaption>
+          </div>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="jobs">
+  <div class="container">
+    <h2 class="title jobs__title">
+      <span class="subtitle">
+        best jobs for you
+      </span>
+      Our students work here
+    </h2>
+    <ul class="jobs__inner">
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/1.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/2.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/3.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/4.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/5.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/1.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/7.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/8.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/9.png" alt="logo by jobs" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/10.png" alt="logo by josb" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/11.png" alt="logo by josb" width="120" height="64">
+        </a>
+      </li>
+      <li class="jobs__item">
+        <a class="jobs__link" href="#">
+          <img class="jobs__img" src="../../../images/jobs/12.png" alt="logo by josb" width="120" height="64">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="section posts">
+  <div class="container">
+    <div class="posts__top">
+      <h2 class="title posts__title">
+        <span class="subtitle">
+          Our blog
+        </span>
+        Latest posts
+      </h2>
+      <a class="link link-l" href="blog.html">
+        Go to blog
+      </a>
+    </div>
+    <ul class="blog">
+      <li class="blog__item blog__item--podcast">
+        <a class="blog__images" href="blog-article.html">
+          <img class="blog__img" src="../../../images/blog/1.jpg" alt="Marketing photo" width="390" height="300">
+        </a>
+        <ul class="blog__list">
+          <li class="blog__descr">
+            <a class="blog__type" href="#">
+              Marketing
+            </a>
+          </li>
+          <li class="blog__descr">
+            <a class="blog__link blog__link--calendar" href="#">
+              September 4, 2020
+            </a>
+          </li>
+          <li class="blog__descr">
+            <a class="blog__link blog__link--clock" href="#">
+              36 min
+            </a>
+          </li>
+        </ul>
+        <a class="blog__link-title" href="blog-article.html">
+          <h3 class="blog__heading">
+            What is traffic arbitrage and does it really make money?
+          </h3>
+        </a>
+        <div class="blog__text">
+          <p>
+            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus
+            gravida. Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus
+            gravida
+          </p>
+        </div>
+        <a class="blog__more" href="blog-article.html">
+          Listen
+        </a>
+      </li>
+
+      <li class="blog__item blog__item--video">
+        <a class="blog__images" href="blog-article.html">
+          <img class="blog__img" src="../../../images/blog/2.jpg" alt="Management photo" width="390" height="300">
+        </a>
+        <ul class="blog__list">
+          <li class="blog__descr">
+            <a class="blog__type" href="#">
+              Management
+            </a>
+          </li>
+          <li class="blog__descr">
+            <a class="blog__link blog__link--calendar" href="#">
+              August 25, 2020
+            </a>
+          </li>
+          <li class="blog__descr">
+            <a class="blog__link blog__link--clock" href="#">
+              45 min
+            </a>
+          </li>
+        </ul>
+        <a class="blog__link-title" href="blog-article.html">
+          <h3 class="blog__heading">
+            What to do and who to talk to if you want to get feedback on the product
+          </h3>
+        </a>
+        <div class="blog__text">
+          <p>
+            Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus.
+            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus
+            gravida
+          </p>
+        </div>
+        <a class="blog__more" href="blog-article.html">
+          Watch
+        </a>
+      </li>
+
+      <li class="blog__item blog__item--article">
+        <a class="blog__images" href="blog-article.html">
+          <img class="blog__img" src="../../../images/blog/3.jpg" alt="Design photo" width="390" height="300">
+        </a>
+        <ul class="blog__list">
+          <li class="blog__descr">
+            <a class="blog__type" href="#">
+              Design
+            </a>
+          </li>
+          <li class="blog__descr">
+            <a class="blog__link blog__link--calendar" href="#">
+              August 8, 2020
+            </a>
+          </li>
+        </ul>
+        <a class="blog__link-title" href="blog-article.html">
+          <h3 class="blog__heading">
+            Should you choose a creative profession if you are attracted to creativity?
+          </h3>
+        </a>
+        <div class="blog__text">
+          <p>
+            Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.
+            Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus
+            gravida
+          </p>
+        </div>
+        <a class="blog__more" href="blog-article.html">
+          Read
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="subscribe">
+  <div class="container">
+    <h2 class="title subscribe__title">
+      <span class="subtitle">
+        Don’t miss anything
+      </span>
+      Subscribe to the Createx School announcements
+    </h2>
+    <form action="#">
+      <label class="sr-only" for="email">
+        Введите свой email
+      </label>
+      <input class="input-email subscribe__input-email" type="email" id="email" name="email"
+        placeholder="Your working email" required="required">
+      <button class="link link-l subscribe__link-l" type="submit">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+  <footer class="footer">
+  <nav class="footer__menu">
+    <div class="container">
+      <ul class="footer__list">
+
+        <li class="footer__item">
+          <a class="footer__logo" href="index.html">
+            <img src="../../../images/logo-white.svg" alt="Logo" width="120" height="22">
+          </a>
+          <div class="footer__text">
+            <p>
+              Createx Online School is a leader in online studying. We have lots of courses and programs from the main
+              market experts. We provide relevant approaches to online learning, internships and employment in the
+              largest companies in the country.
+            </p>
+          </div>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#youTube');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в youTube
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#telegram');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в telegram
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в instagram
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            SITE MAP
+          </h3>
+          <ul class="footer__map footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link" href="about.html">
+                About Us
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href=" courses.html">
+                Courses
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="events.html">
+                Events
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="contacts.html">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            COURSES
+          </h3>
+          <ul class="footer__courses footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Marketing
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Management
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                HR & Recruting
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Design
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Development
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            CONTACT US
+          </h3>
+          <ul class="footer__contact footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link footer__link--phone" href="tel:4055550128">
+                (405) 555-0128
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link footer__link--email" href="mailto:hello@createx.com">
+                hello@createx.com
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title">
+            SIGN UP TO OUR NEWSLETTER
+          </h3>
+          <form class="footer__form" action="">
+            <label class="footer__label" for="email">
+              <input class="footer__input" type="email" placeholder="Email address">
+              <button class="footer__btn" type="submit"></button>
+            </label>
+            <span class="footer__descr">
+              *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+            </span>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__copy">
+        <div class="footer__copyrights">
+          © All rights reserved.Made with
+          <a class="footer__heart" href="#">
+            by Createx Studio
+          </a>
+        </div>
+        <a class="footer__top" href="#body">
+          GO TO TOP
+      </div>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

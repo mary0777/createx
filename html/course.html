@@ -1,0 +1,25 @@
+@include('components/global/_head.html', {
+"page": " | Course"
+})
+@include('components/course/_header.html')
+
+<main class="main">
+
+  @include('components/global/_name.html', {
+  "subtitle": "course",
+  "title": "User Experience. Principles of Human-Centered Design"
+  })
+  @include('components/global/_about.html')
+  @include('components/global/_curator.html')
+  @include('components/course/_steps.html')
+  @include('components/course/_discount.html')
+  @include('components/global/_benefit.html')
+  @include('components/global/_learn.html')
+  @include('components/global/_reviews.html')
+  @include('components/global/_register.html')
+  @include('components/course/_like.html')
+  @include('components/global/_footer.html')
+
+</main>
+
+@include('components/global/_footer-scripts.html')

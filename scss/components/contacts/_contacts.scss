@@ -1,0 +1,148 @@
+.contacts {
+	padding-top: 153px;
+
+	@include r($r-lg) {
+		padding-top: 110px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@include r($r-lg) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+	}
+
+	&__info {
+		margin-right: 40px;
+		max-width: 400px;
+
+		@include r($r-lg) {
+			margin-right: 0;
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		@include r($r-sm) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__address {
+		@include r($r-lg) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+		margin-bottom: 48px;
+
+		@include r($r-lg) {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px 30px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 36px;
+		line-height: 1.5;
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+
+			@include r($r-lg) {
+				margin-bottom: 0;
+			}
+		}
+
+		&::before {
+			@include pseudo;
+			width: 24px;
+			height: 24px;
+			top: 5px;
+			left: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&--email {
+			&::before {
+				background-image: url('../../../images/icons/chat-contacts.svg');
+			}
+		}
+
+		&--phone {
+			&::before {
+				background-image: url('../../../images/icons/iPhone--contact.svg');
+			}
+		}
+
+		&--address {
+			&::before {
+				background-image: url('../../../images/icons/outline--contact.svg');
+			}
+		}
+	}
+
+	&__heading {
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		color: $c-gray-700;
+	}
+
+	&__link {
+		font-size: 18px;
+		color: $c-title;
+		outline: transparent;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		transition: color 0.3s linear;
+
+		&:hover {
+			color: $c-primary;
+		}
+
+		&:focus {
+			border: 1px solid $c-primary;
+		}
+	}
+
+	&__follow {
+		display: block;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 24px;
+		color: $c-title;
+		text-transform: uppercase;
+
+		@include r($r-lg) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__iframe {
+		@include r($r-lg) {
+			margin: 0 auto;
+		}
+
+		@include r($r-md) {
+			width: 100%;
+		}
+
+		@include r($r-sm) {
+			height: 280px;
+		}
+	}
+}

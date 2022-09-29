@@ -1,0 +1,72 @@
+.accordion {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $c-title;
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s linear;
+
+    @include r($r-md) {
+      font-size: 16px;
+    }
+
+    &::before {
+      @include pseudo;
+      width: 19px;
+      height: 1px;
+      background-color: $c-primary;
+      left: 0;
+      top: 14px;
+    }
+
+    &::after {
+      @include pseudo;
+      width: 1px;
+      height: 19px;
+      background-color: $c-primary;
+      left: 9px;
+      top: 5px;
+      transform: rotate(0deg);
+      transition: transform 0.2s linear;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
+
+  &__lesson {
+    font-weight: 400;
+    color: $c-primary;
+    margin-right: 8px;
+  }
+
+  &__text {
+    padding-left: 40px;
+    padding-top: 16px;
+    display: none;
+
+    @include r($r-md) {
+      font-size: 14px;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
+}
