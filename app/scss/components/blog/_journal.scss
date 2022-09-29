@@ -1,0 +1,195 @@
+.journal {
+	padding-top: 152px;
+
+	@include r($r-sm) {
+		padding-top: 100px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+
+		@include r($r-md) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px;
+		align-items: center;
+		margin-bottom: 60px;
+
+		@include r($r-md) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__btn {
+		padding-left: 44px;
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			width: 16px;
+			height: 16px;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			mask-repeat: no-repeat;
+			mask-position: center;
+			mask-size: cover;
+			background-color: $c-gray-600;
+			transition: background-color 0.3s linear;
+		}
+
+		&--articles {
+			&::before {
+				mask-image: url('../../../images/sprite.svg#articles');
+			}
+		}
+
+		&--videos {
+			&::before {
+				mask-image: url('../../../images/sprite.svg#play');
+			}
+		}
+
+		&--podcasts {
+			&::before {
+				mask-image: url('../../../images/sprite.svg#mic');
+			}
+		}
+
+		&:hover {
+			&::before {
+				background-color: $c-default;
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+
+		@include r($r-md) {
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	&__type {
+		white-space: nowrap;
+		font-weight: 700;
+		margin-right: 12px;
+
+		@include r($r-md) {
+			margin-right: 0;
+		}
+	}
+
+	&__blog {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+		row-gap: 60px;
+		margin-bottom: 80px;
+
+		@include r($r-lg) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		@include r($r-md) {
+			margin-bottom: 50px;
+		}
+
+		.blog__item {
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+
+			&:nth-child(4) {
+				max-width: 810px;
+				grid-column: span 2;
+			}
+
+			@include r($r-sm) {
+				height: auto;
+			}
+		}
+	}
+
+	&__select {
+		margin-right: 40px;
+
+		@include r($r-md) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__input {
+		width: 285px;
+		height: 44px;
+
+		@include r($r-md) {
+			width: 100%;
+		}
+	}
+
+	.mixitup-control-active {
+		color: #ff3f3a;
+		border: 1px solid $c-primary;
+
+		&::before {
+			background-color: $c-primary;
+		}
+	}
+
+	.jq-selectbox {
+		border: 1px solid transparent;
+
+		&:hover {
+			box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+		}
+	}
+
+	.jq-selectbox__select {
+		width: 160px;
+		height: 44px;
+		padding: 11px 32px 12px 16px;
+		border: 1px solid #d7dadd;
+		border-radius: 4px;
+		background: $c-white;
+		font-size: 14px;
+		line-height: 1.5;
+		color: $c-default;
+	}
+
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+
+	.jq-selectbox__trigger-arrow {
+		position: absolute;
+		top: 14px;
+		right: 12px;
+		width: 16px;
+		height: 16px;
+		background-color: $c-gray-800;
+		mask-image: url('../../../images/sprite.svg#down-chevron');
+	}
+
+	.jq-selectbox li:hover {
+		background-color: #a3abb1;
+		color: #fff;
+	}
+
+	.jq-selectbox.focused .jq-selectbox__select {
+		border: 1px solid $c-primary;
+		box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	}
+}

@@ -1,0 +1,171 @@
+.sign {
+  background-color: $c-white;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  position: relative;
+  max-width: 486px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    padding: 48px 48px 0 48px;
+    color: $c-title;
+  }
+
+  &__fieldset {
+    border: none;
+    border-bottom: 1px solid #e5e8ed;
+    padding: 0 24px 24px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $c-gray-700;
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__input {
+    padding: 11px 16px 12px;
+    max-width: 100%;
+  }
+
+  &__eye {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    right: 14px;
+    top: 47px;
+    background-color: $c-default;
+    mask-image: url('../../../images/sprite.svg#eye');
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s linear;
+
+    &--close {
+      mask-image: url('../../../images/sprite.svg#closed-eye');
+    }
+
+    &:hover {
+      background-color: $c-primary;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__password {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $c-primary;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: underline transparent;
+    transition: text-decoration 0.3s linear;
+
+    &:hover {
+      text-decoration: underline $c-primary;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__account {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__register {
+    color: $c-primary;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: underline transparent;
+    transition: text-decoration 0.3s linear;
+
+    &:hover {
+      text-decoration: underline $c-primary;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__with {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $c-gray-700;
+    margin-bottom: 16px;
+    padding: 24px 48px 0;
+    text-align: center;
+    display: block;
+  }
+
+  &__socials {
+    padding: 0 48px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: $c-gray-700;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    transition: background-color 0.3s linear;
+    position: relative;
+
+    &:hover {
+      background-color: $c-primary;
+    }
+  }
+}

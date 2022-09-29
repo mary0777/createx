@@ -1,16 +1,69 @@
-// @mixin line-clamp($lines: 1) {
-//   @if $lines <=1 {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     white-space: nowrap;
-//   } @else {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: $lines;
-//     -webkit-box-orient: vertical;
-//   }
-// }
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
 
 // @include line-clamp(3);
 
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin h($height) {
+  @media (max-height: #{$height}px) {
+    @content;
+  }
+}
+
+@mixin burger {
+  width: $burgerWidth;
+  height: $burgerHeight;
+  position: relative;
+  color: $burgerColor;
+}
+
+$r-sm: 576;
+$h-sm: 576;
+$r-md: 768;
+$r-lg: 992;
+$r-xl: 1200;
+
+
+$c-default: #424551;
+$c-title: #1e212c;
+$c-white: #fff;
+$c-gray-800: #424551;
+$c-gray-700: #787a80;
+$c-gray-600: #9a9ca5;
+$c-danger:#ff4242;
+$c-primary:#ff3f3a;
+$c-marketing:#03cea4;
+$c-management:#5a87fc;
+$c-recruting:#f89828;
+$c-design:#f52f6e;
+$c-development:#7772f1;
+
+
+$burgerWidth: 30px;
+$burgerHeight: 20px;
+$burgerLineHeight: 2px;
+$burgerColor: $c-default;

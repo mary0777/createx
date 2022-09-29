@@ -1,0 +1,106 @@
+.courses {
+
+  &--courses {
+    margin-top: 133px;
+    margin-bottom: 120px;
+
+    @include r($r-md) {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__titles {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include r($r-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    max-width: 315px;
+    width: 100%;
+    margin-left: auto;
+
+    @include r($r-xl) {
+      margin-left: 0;
+    }
+  }
+
+  &__inner {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+
+    @include r($r-md) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 50px;
+    }
+
+    @include r($r-sm) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card {
+    max-width: 390px;
+    min-height: 438px;
+    height: 100%;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__img {
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &__info {
+    padding: 24px;
+  }
+
+  &__more {
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: color 0.3s linear, border 0.3s linear;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $c-default;
+      mask-image: url('../../../images/sprite.svg#convert');
+      mask-repeat: no-repeat;
+      transition: background-color 0.3s linear;
+    }
+
+    &:hover {
+      color: $c-primary;
+
+      &::before {
+        background-color: $c-primary;
+      }
+    }
+
+    &:focus {
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .mixitup-control-active {
+    color: $c-primary;
+    border: 1px solid $c-primary;
+  }
+}

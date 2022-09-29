@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Createx  | Events</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ff0000">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="app/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+  <div class="wrapper">
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="../../../images/logo.png" alt="Logo" width="120" height="22">
+      </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="about.html">
+            About Us
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="courses.html">
+            Courses
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--active">
+            Events
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">
+            Contacts
+          </a>
+        </li>
+
+        <li class="menu__item menu__item--burger">
+          <a class="link link-l menu__link-l" href="#">
+            Get consultation
+          </a>
+        </li>
+
+        <li class="menu__item menu__item--burger">
+          <a class="menu__sign" href="#sign-in">
+            Log in / Register
+          </a>
+        </li>
+      </ul>
+      <div class="menu__btn">
+        <a class="link link-l menu__link-l" href="#">
+          Get consultation
+        </a>
+        <a class="menu__sign" href="#sign-in">
+          Log in / Register
+        </a>
+
+        <form id="sign-in" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign in
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Sign in to your account using email and password provided during registration.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-field" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-field" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Keep me signed in
+              </label>
+              <a class="sign__password" href="#">
+                Forgot password?
+              </a>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign in
+            </button>
+            <span class="sign__account">
+              Don't have an account?
+              <a class="sign__register" href="#sign-up">
+                Sign up
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+        <form id="sign-up" class="mfp-hide sign">
+          <h2 class="sign__title">
+            Sign up
+          </h2>
+          <fieldset class="sign__fieldset">
+            <p class="sign__text">
+              Registration takes less than a minute but gives you full control over your studying.
+            </p>
+            <ul>
+              <li class="sign__item">
+                <label class="label" for="name">
+                  Full Name
+                </label>
+                <input class="input-email sign__input" type="text" id="name" name="name" placeholder="Your full name"
+                  required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="email">
+                  Email
+                </label>
+                <input class="input-email sign__input" type="email" id="email" name="email"
+                  placeholder="Your working email" required="required">
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password" name="password" value="secret"
+                  required="required">
+                <span toggle="#password" class="sign__eye"></span>
+              </li>
+              <li class="sign__item">
+                <label class="label" for="password">
+                  Confirm Password
+                </label>
+                <input class="input-password sign__input" type="password" id="password-confirm" name="password"
+                  value="secret" required="required">
+                <span toggle="#password-confirm" class="sign__eye"></span>
+              </li>
+            </ul>
+            <div class="sign__box">
+              <input class="input-checkbox" type="checkbox" id="keep" name="keep" value="keep" checked>
+              <label class="label-checkbox" for="keep">
+                Remember me
+              </label>
+            </div>
+            <button class="link link-r sign__btn" type="submit">
+              Sign up
+            </button>
+            <span class="sign__account">
+              Already have an account?
+              <a class="sign__register" href="#sign-in">
+                Sign in
+              </a>
+            </span>
+          </fieldset>
+          <span class="sign__with">
+            Or sign in with
+          </span>
+          <ul class="sign__socials">
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#google');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в google
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="sign__social">
+              <a class="sign__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+      <button class="burger" type="button">
+        <span class="burger__line"></span>
+        <span class="sr-only">Открыть меню</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="section events">
+  <div class="container">
+    <h1 class="sr-only">
+      Our events
+    </h1>
+    <h2 class="title events__title">
+      <span class="subtitle">
+        Our events
+      </span>
+      Lectures, workshops & master-classes
+    </h2>
+    <form class="events__form" action="#">
+      <ul class="events__list">
+        <li class="events__item">
+          <span class="events__type">
+            Event category
+          </span>
+          <select class="select" name="themes">
+            <option value="" selected>all themes</option>
+            <option value="">Onine master-class</option>
+            <option value="">Onine lecture</option>
+            <option value="">Onine workshop</option>
+          </select>
+        </li>
+        <li class="events__item">
+          <span class="events__type">
+            Sort by
+          </span>
+          <select class="select" name="type">
+            <option value="" selected>newest</option>
+            <option value="">oldest</option>
+            <option value="">cheapest </option>
+            <option value="">richest</option>
+          </select>
+        </li>
+        <li class="events__item">
+          <span class="events__type">
+            Show
+          </span>
+          <select class="select select-num" name="num">
+            <option value="">9</option>
+            <option value="">12</option>
+            <option value="" selected>18 </option>
+            <option value="">24</option>
+          </select>
+          <span class="events__comment">
+            events per page
+          </span>
+        </li>
+        <li class="events__item">
+          <label class="search" for="search">
+            <input class="search__input" type="text" id="search" name="search" placeholder="Search course...">
+            <button class="search__btn" type="submit"></button>
+            <span class="sr-only">
+              Поиск курса
+            </span>
+          </label>
+        </li>
+      </ul>
+      <div class="events__btn">
+        <button class="events__button events__button--active events__button--list" type="button"></button>
+        <button class="events__button events__button--grid" type="button"></button>
+        <span class="sr-only">
+          Нажать для изменения раскладки
+        </span>
+      </div>
+
+    </form>
+
+    <ul class="lectures">
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-08-05 11:00 - 14:00">
+          <span class="lectures__num">
+            05
+          </span>
+          <span class="lectures__month">
+            August
+            <span class="lectures__clock">
+              11:00 – 14:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-08-05 11:00 - 14:00">
+          <span class="lectures__num">
+            05 Aug
+          </span>
+          <span class="lectures__clock">
+            11:00 – 14:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Formation of the organizational structure of the company in the face of uncertainty.
+            <span class="lectures__type">
+              Onine master-class
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-07-24 11:00 - 12:30">
+          <span class="lectures__num">
+            24
+          </span>
+          <span class="lectures__month">
+            July
+            <span class="lectures__clock">
+              11:00 – 12:30
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-07-24 11:00 - 12:30">
+          <span class="lectures__num">
+            24 July
+          </span>
+          <span class="lectures__clock">
+            11:00 – 12:30
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Building a customer service department. Best Practices.
+            <span class="lectures__type">
+              Onine lecture
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-07-16 10:00 - 13:00">
+          <span class="lectures__num">
+            16
+          </span>
+          <span class="lectures__month">
+            July
+            <span class="lectures__clock">
+              10:00 – 13:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-07-16 10:00 - 13:00">
+          <span class="lectures__num">
+            16 July
+          </span>
+          <span class="lectures__clock">
+            10:00 – 13:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            How to apply methods of speculative design in practice. Worldbuilding prototyping.
+            <span class="lectures__type">
+              Onine workshop
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-07-10 09:00 - 14:00">
+          <span class="lectures__num">
+            10
+          </span>
+          <span class="lectures__month">
+            July
+            <span class="lectures__clock">
+              9:00 – 14:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-07-10 09:00 - 14:00">
+          <span class="lectures__num">
+            10 July
+          </span>
+          <span class="lectures__clock">
+            9:00 – 14:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Find and evaluate: search and assessment tools for candidates.
+            <span class="lectures__type">
+              Onine workshop
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-06-27 15:00 - 19:00">
+          <span class="lectures__num">
+            27
+          </span>
+          <span class="lectures__month">
+            June
+            <span class="lectures__clock">
+              15:00 – 19:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-06-27 15:00 - 19:00">
+          <span class="lectures__num">
+            27 June
+          </span>
+          <span class="lectures__clock">
+            15:00 – 19:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
+            <span class="lectures__type">
+              Onine master-class
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-06-15 10:00 - 12:00">
+          <span class="lectures__num">
+            15
+          </span>
+          <span class="lectures__month">
+            June
+            <span class="lectures__clock">
+              10:00 – 12:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-06-15 10:00 - 12:00">
+          <span class="lectures__num">
+            15 June
+          </span>
+          <span class="lectures__clock">
+            10:00 – 12:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Marketing or growth hacking: main differences and what business needs.
+            <span class="lectures__type">
+              Onine lecture
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-06-02 11:00 - 13:00">
+          <span class="lectures__num">
+            02
+          </span>
+          <span class="lectures__month">
+            June
+            <span class="lectures__clock">
+              11:00 – 13:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-06-02 11:00 - 13:00">
+          <span class="lectures__num">
+            02 June
+          </span>
+          <span class="lectures__clock">
+            11:00 – 13:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            How to brief a client and present your design to approve it from the first show.
+            <span class="lectures__type">
+              Onine lecture
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-05-29 11:00 - 12:00">
+          <span class="lectures__num">
+            29
+          </span>
+          <span class="lectures__month">
+            May
+            <span class="lectures__clock">
+              11:00 – 12:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-05-29 11:00 - 12:00">
+          <span class="lectures__num">
+            29 May
+          </span>
+          <span class="lectures__clock">
+            11:00 – 12:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            Who is a project manager and do I want to be PM?
+            <span class="lectures__type">
+              Onine lecture
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+      <li class="lectures__item">
+        <time class="lectures__time" datetime="2022-05-18 10:00 - 12:00">
+          <span class="lectures__num">
+            18
+          </span>
+          <span class="lectures__month">
+            May
+            <span class="lectures__clock">
+              10:00 – 12:00
+            </span>
+          </span>
+        </time>
+        <time class="lectures__time lectures__time--grid" datetime="2022-05-18 10:00 - 12:00">
+          <span class="lectures__num">
+            18 May
+          </span>
+          <span class="lectures__clock">
+            10:00 – 12:00
+          </span>
+        </time>
+        <a class="lectures__link" href="event.html">
+          <h3 class="lectures__heading">
+            The company's business page as an additional tool to support the announcement of vacancies.
+            <span class="lectures__type">
+              Onine lecture
+            </span>
+          </h3>
+        </a>
+        <a class="link-white link-white-r lectures__link-white" href="event.html">
+          View more
+        </a>
+      </li>
+    </ul>
+
+    <ul class="pagination">
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--active" href="#">
+          1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          3
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--next" href="#">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="subscribe">
+  <div class="container">
+    <h2 class="title subscribe__title">
+      <span class="subtitle">
+        Don’t miss anything
+      </span>
+      Subscribe to the Createx School announcements
+    </h2>
+    <form action="#">
+      <label class="sr-only" for="email">
+        Введите свой email
+      </label>
+      <input class="input-email subscribe__input-email" type="email" id="email" name="email"
+        placeholder="Your working email" required="required">
+      <button class="link link-l subscribe__link-l" type="submit">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+  <footer class="footer">
+  <nav class="footer__menu">
+    <div class="container">
+      <ul class="footer__list">
+
+        <li class="footer__item">
+          <a class="footer__logo" href="index.html">
+            <img src="../../../images/logo-white.svg" alt="Logo" width="120" height="22">
+          </a>
+          <div class="footer__text">
+            <p>
+              Createx Online School is a leader in online studying. We have lots of courses and programs from the main
+              market experts. We provide relevant approaches to online learning, internships and employment in the
+              largest companies in the country.
+            </p>
+          </div>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#facebook');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в facebook
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#twitter');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в twitter
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#youTube');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в youTube
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#telegram');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в telegram
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#instagram');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в instagram
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" style=" -webkit-mask-image: url('../images/sprite.svg#linked-In');">
+                <span class="sr-only">
+                  Перейти на нашу страницу в linked-In
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            SITE MAP
+          </h3>
+          <ul class="footer__map footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link" href="about.html">
+                About Us
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href=" courses.html">
+                Courses
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="events.html">
+                Events
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="blog.html">
+                Blog
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="contacts.html">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            COURSES
+          </h3>
+          <ul class="footer__courses footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Marketing
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Management
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                HR & Recruting
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Design
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link" href="courses.html">
+                Development
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title footer__slide">
+            CONTACT US
+          </h3>
+          <ul class="footer__contact footer__slide-open">
+            <li class="footer__items">
+              <a class="footer__link footer__link--phone" href="tel:4055550128">
+                (405) 555-0128
+              </a>
+            </li>
+            <li class="footer__items">
+              <a class="footer__link footer__link--email" href="mailto:hello@createx.com">
+                hello@createx.com
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__title">
+            SIGN UP TO OUR NEWSLETTER
+          </h3>
+          <form class="footer__form" action="">
+            <label class="footer__label" for="email">
+              <input class="footer__input" type="email" placeholder="Email address">
+              <button class="footer__btn" type="submit"></button>
+            </label>
+            <span class="footer__descr">
+              *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+            </span>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__copy">
+        <div class="footer__copyrights">
+          © All rights reserved.Made with
+          <a class="footer__heart" href="#">
+            by Createx Studio
+          </a>
+        </div>
+        <a class="footer__top" href="#body">
+          GO TO TOP
+      </div>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
