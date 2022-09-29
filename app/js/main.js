@@ -24,6 +24,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const filter = document.querySelector('.filter-btn'); 
+  const closeFilter = document.querySelector('.close-btn'); 
+  const menuFilter = document.querySelector('.recruting__aside'); 
+  const lockFilter = document.querySelector('body');
+
+  filter.addEventListener('click', () => {
+      menuFilter.classList.add('recruting__aside--active'); 
+      filter.classList.add('filter-btn--active'); 
+      lockFilter.classList.add('lock-filter'); 
+  });
+  
+  closeFilter.addEventListener('click', () => {
+    menuFilter.classList.remove('recruting__aside--active'); 
+      filter.classList.remove('filter-btn--active'); 
+      lockFilter.classList.remove('lock-filter'); 
+  });
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('lock-filter'))  {
+      filter.classList.remove('filter-btn--active');
+      menuFilter.classList.remove('recruting__aside--active');
+      lockFilter.classList.remove('lock-filter');
+    }
+  });
+});
+
+
 $(function () {
 
   $('.benefits__link').on('click', function (e){
@@ -110,7 +137,7 @@ $(function () {
     ]
   });
 
-  $('.lectures--interested, .like__blog').slick({
+  $('.lectures--interested').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
@@ -134,17 +161,45 @@ $(function () {
     ]
   });
 
+  $('.like__blog').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'<button type="button" class="btn-prev"></button>',
+    nextArrow: '<button type="button" class="btn-next"></button>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          centerMode: true,
+          variableWidth: true
+        }
+      },
+      {
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+          variableWidth: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          variableWidth: true
+        }
+      }
+    ]
+  });
+
 
  $(".accordion__heading").click(function(){
   $(this).next().slideToggle("slow");
    $(this).toggleClass('accordion__heading--active')
  });
   
-//  $(".accordion__heading").click(function(){
-//   $(this).next('.accordion__text').removeClass('accordion__text--open').slideToggle("slow");
-//    $(this).siblings('.accordion__text').addClass('accordion__text--open');
-//    $(this).toggleClass('accordion__heading--active')
-// });
 
   
 $('.events__button').on('click', function (){
@@ -167,16 +222,9 @@ $('.events__button--list').on('click', function (){
     $(this).toggleClass('footer__slide--active');
   });
 
-  $('.filter-btn').on('click', function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass('filter-btn--active');
-  });
-
 
   var mixer = mixitup('.courses__list, .journal__blog');
- 
-  
-  
+
 });
 
 
@@ -197,9 +245,7 @@ $(function(){
           $('body,html').animate({scrollTop: top}, 1500);
       });
   });
-  
-
-
+ 
 
 var endDate = "dec 31, 2022 00:00:00";
 

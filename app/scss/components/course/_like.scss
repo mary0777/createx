@@ -49,17 +49,21 @@
 
   &__blog {
     margin-bottom: 80px;
+  }
 
-    .blog__item {
-      max-width: 100%;
+  .blog__img {
+    @include r($r-sm) {
+      width: 100%;
+      height: 230px;
     }
   }
 
   .slick-current {
-
     .courses-card,
-    .lectures__item {
+    .lectures__item,
+    .blog__item {
       border: 1px solid $c-primary;
+      border-radius: 4px;
     }
   }
 

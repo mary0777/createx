@@ -261,18 +261,26 @@
 
       <div class="recruting__content">
 
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__type breadcrumbs__type--article" href="#">
-              Article
-            </a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
-              HR & Recruting
-            </a>
-          </li>
-        </ul>
+        <div class="recruting__top">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__type breadcrumbs__type--article" href="#">
+                Article
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
+                HR & Recruting
+              </a>
+            </li>
+          </ul>
+
+          <button class="filter-btn" type="button">
+            <span class="sr-only">Открыть фильтр продуктов</span>
+          </button>
+        </div>
+
+
 
         <h1 class="title recruting__title">
           HR statistics: job search, interviews, hiring and recruiting
@@ -426,7 +434,13 @@
         </div>
       </div>
 
+
+
       <div class="recruting__aside aside">
+        <button class="close-btn" type="button">
+          <span class="sr-only">Закртить фильтр</span>
+        </button>
+
         <ul class="aside__inner">
 
           <li class="aside__item">
@@ -446,9 +460,10 @@
               Author
             </h2>
             <div class="aside__box">
-              <img src="../../../images/blog/author.jpg" alt="Photo by Kristin Watson" width="100" height="100">
+              <img class="aside__img" src="../../../images/blog/author.jpg" alt="Photo by Kristin Watson" width="100"
+                height="100">
               <div class="aside__info">
-                <a class="aside__link" href="#">
+                <a class="aside__link" href="course.html">
                   <h3 class="aside__heading">
                     Kristin Watson
                   </h3>
@@ -492,7 +507,7 @@
             </h2>
             <ul class="aside__list">
               <li class="aside__box">
-                <img src="../../../images/blog/1-small.jpg" alt="Articles" width="100" height="100">
+                <img class="aside__img" src="../../../images/blog/1-small.jpg" alt="Articles" width="100" height="100">
                 <div class="aside__info">
                   <a class="recruting__link recruting__link--calendar" href="#">
                     September 4, 2020
@@ -506,7 +521,7 @@
               </li>
 
               <li class="aside__box">
-                <img src="../../../images/blog/2-small.jpg" alt="Articles" width="100" height="100">
+                <img class="aside__img" src="../../../images/blog/2-small.jpg" alt="Articles" width="100" height="100">
                 <div class="aside__info">
                   <a class="recruting__link recruting__link--calendar" href="#">
                     July 15, 2020
@@ -520,7 +535,7 @@
               </li>
 
               <li class="aside__box">
-                <img src="../../../images/blog/3-small.jpg" alt="Articles" width="100" height="100">
+                <img class="aside__img" src="../../../images/blog/3-small.jpg" alt="Articles" width="100" height="100">
                 <div class="aside__info">
                   <a class="recruting__link recruting__link--calendar" href="#">
                     August 2, 2020
@@ -574,6 +589,8 @@
           </li>
         </ul>
       </div>
+
+
     </div>
   </div>
 </section>

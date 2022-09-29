@@ -66,6 +66,10 @@
   &__btn {
     display: flex;
     height: 20px;
+
+    @include r($r-md){
+      display: none;
+    }
   }
 
   &__button {
