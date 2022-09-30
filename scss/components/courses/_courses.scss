@@ -81,7 +81,7 @@
       top: 50%;
       transform: translateY(-50%);
       background-color: $c-default;
-      mask-image: url('../../../images/sprite.svg#convert');
+      mask-image: url('../images/sprite.svg#convert');
       mask-repeat: no-repeat;
       transition: background-color 0.3s linear;
     }

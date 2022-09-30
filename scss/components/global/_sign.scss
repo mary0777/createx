@@ -50,12 +50,12 @@
     right: 14px;
     top: 47px;
     background-color: $c-default;
-    mask-image: url('../../../images/sprite.svg#eye');
+    mask-image: url('../images/sprite.svg#eye');
     mask-repeat: no-repeat;
     transition: background-color 0.3s linear;
 
     &--close {
-      mask-image: url('../../../images/sprite.svg#closed-eye');
+      mask-image: url('../images/sprite.svg#closed-eye');
     }
 
     &:hover {

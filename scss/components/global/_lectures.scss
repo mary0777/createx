@@ -1,7 +1,7 @@
 .workshops {
   padding: 80px 0;
   position: relative;
-  background-image: url(../../../images/main/lectures-bg.jpg);
+  background-image: url(../images/main/lectures-bg.jpg);
   z-index: 1;
 
   &::before {
@@ -9,7 +9,7 @@
     width: 116px;
     height: 159px;
     bottom: 0;
-    background-image: url(../../../images/main/dots.png);
+    background-image: url(../images/main/dots.png);
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -20,7 +20,7 @@
     height: 284px;
     top: -133px;
     right: -60px;
-    background-image: url(../../../images/main/circles.png);
+    background-image: url(../images/main/circles.png);
     background-repeat: no-repeat;
     z-index: -1;
   }

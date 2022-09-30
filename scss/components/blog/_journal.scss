@@ -47,19 +47,19 @@
 
 		&--articles {
 			&::before {
-				mask-image: url('../../../images/sprite.svg#articles');
+				mask-image: url('../images/sprite.svg#articles');
 			}
 		}
 
 		&--videos {
 			&::before {
-				mask-image: url('../../../images/sprite.svg#play');
+				mask-image: url('../images/sprite.svg#play');
 			}
 		}
 
 		&--podcasts {
 			&::before {
-				mask-image: url('../../../images/sprite.svg#mic');
+				mask-image: url('../images/sprite.svg#mic');
 			}
 		}
 
@@ -180,7 +180,7 @@
 		width: 16px;
 		height: 16px;
 		background-color: $c-gray-800;
-		mask-image: url('../../../images/sprite.svg#down-chevron');
+		mask-image: url('../images/sprite.svg#down-chevron');
 	}
 
 	.jq-selectbox li:hover {
