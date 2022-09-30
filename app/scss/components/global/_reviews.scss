@@ -1,5 +1,5 @@
 .reviews {
-  background-image: url(../../../images/main/team-bg.jpg);
+  background-image: url(../images/main/team-bg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -42,7 +42,7 @@
       height: 20px;
       top: 0;
       left: 0;
-      background-image: url(../../../images/icons/braces.png);
+      background-image: url(../images/icons/braces.png);
     }
 
     @include r($r-sm) {

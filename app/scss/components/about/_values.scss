@@ -1,5 +1,5 @@
 .values {
-  background-image: url('../../../images/main/shapes.png');
+  background-image: url('../images/main/shapes.png');
   background-repeat: no-repeat;
   background-position: right top;
 
@@ -44,7 +44,7 @@
         height: 162px;
         top: 0;
         left: -45px;
-        background-image: url('../../../images/values/divider.svg');
+        background-image: url('../images/values/divider.svg');
 
         @include r($r-xl) {
           display: none;
@@ -81,25 +81,25 @@
 
     &--approach {
       &::before {
-        background-image: url('../../../images/values/approach.svg');
+        background-image: url('../images/values/approach.svg');
       }
     }
 
     &--feedbacks {
       &::before {
-        background-image: url('../../../images/values/feedbacks.svg');
+        background-image: url('../images/values/feedbacks.svg');
       }
     }
 
     &--efficiency {
       &::before {
-        background-image: url('../../../images/values/efficiency.svg');
+        background-image: url('../images/values/efficiency.svg');
       }
     }
 
     &--shedule {
       &::before {
-        background-image: url('../../../images/values/shedule.svg');
+        background-image: url('../images/values/shedule.svg');
       }
     }
   }

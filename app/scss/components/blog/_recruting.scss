@@ -81,13 +81,13 @@
 
     &--calendar {
       &::before {
-        mask-image: url('../../../images/sprite.svg#calendar');
+        mask-image: url('../images/sprite.svg#calendar');
       }
     }
 
     &--clock {
       &::before {
-        mask-image: url('../../../images/sprite.svg#clock');
+        mask-image: url('../images/sprite.svg#clock');
       }
     }
 
@@ -194,7 +194,7 @@
         height: 20px;
         left: 0;
         top: 5px;
-        background-image: url(../../../images/icons/braces.png);
+        background-image: url(../images/icons/braces.png);
       }
 
       @include r($r-sm) {
@@ -224,7 +224,7 @@
           height: 16px;
           left: 0;
           top: 5px;
-          background-image: url(../../../images/icons/check.svg);
+          background-image: url(../images/icons/check.svg);
           background-repeat: no-repeat;
           background-size: cover;
         }
@@ -329,7 +329,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../../images/icons/filter.png);
+    background-image: url(../images/icons/filter.png);
     display: none;
 
     @include r($r-xl) {
@@ -425,7 +425,7 @@
 
     &--article {
       &::before {
-        mask-image: url(../../../images/sprite.svg#articles);
+        mask-image: url(../images/sprite.svg#articles);
       }
     }
 
