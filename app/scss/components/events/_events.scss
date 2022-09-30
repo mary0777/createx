@@ -81,12 +81,12 @@
     transition: background-color 0.3s linear;
 
     &--list {
-      mask-image: url('../../../images/sprite.svg#list');
+      mask-image: url('../images/sprite.svg#list');
       margin-right: 12px;
     }
 
     &--grid {
-      mask-image: url('../../../images/sprite.svg#grid');
+      mask-image: url('../images/sprite.svg#grid');
     }
 
     &--active {
@@ -129,7 +129,7 @@
     width: 16px;
     height: 16px;
     background-color: $c-gray-800;
-    mask-image: url('../../../images/sprite.svg#down-chevron');
+    mask-image: url('../images/sprite.svg#down-chevron');
   }
 
   .jq-selectbox li:hover {
@@ -193,7 +193,7 @@
       width: 24px;
       height: 24px;
       background-color: $c-default;
-      mask-image: url('../../../images/sprite.svg#arrow-next');
+      mask-image: url('../images/sprite.svg#arrow-next');
       transition: background-color 0.3s linear;
 
       &:hover {

@@ -14,7 +14,7 @@
       @include pseudo;
       width: 242px;
       height: 242px;
-      background-image: url(../../../images/curator/circle-bg.png);
+      background-image: url(../images/curator/circle-bg.png);
       background-repeat: no-repeat;
       left: -143px;
       top: -66px;
@@ -51,7 +51,7 @@
         @include pseudo;
         width: 88px;
         height: 87px;
-        background-image: url(../../../images/main/shapes.png);
+        background-image: url(../images/main/shapes.png);
         background-repeat: no-repeat;
         right: 0;
         top: 0;
@@ -108,19 +108,19 @@
 
     &--rate {
       &::before {
-        background-image: url(../../../images/curator/star.svg);
+        background-image: url(../images/curator/star.svg);
       }
     }
 
     &--courses {
       &::before {
-        background-image: url(../../../images/curator/play.svg);
+        background-image: url(../images/curator/play.svg);
       }
     }
 
     &--students {
       &::before {
-        background-image: url(../../../images/curator/profile.svg);
+        background-image: url(../images/curator/profile.svg);
       }
     }
 

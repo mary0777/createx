@@ -110,19 +110,19 @@
 
     &--feedback {
       &::before {
-        mask-image: url('../../../images/sprite.svg#like');
+        mask-image: url('../images/sprite.svg#like');
       }
     }
 
     &--online {
       &::before {
-        mask-image: url('../../../images/sprite.svg#layouts');
+        mask-image: url('../images/sprite.svg#layouts');
       }
     }
 
     &--community {
       &::before {
-        mask-image: url('../../../images/sprite.svg#chat');
+        mask-image: url('../images/sprite.svg#chat');
       }
     }
   }

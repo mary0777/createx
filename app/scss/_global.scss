@@ -338,7 +338,7 @@ body {
     width: 24px;
     height: 24px;
     background-color: $c-gray-600;
-    mask-image: url('../../../images/sprite.svg#search');
+    mask-image: url('../images/sprite.svg#search');
     mask-repeat: no-repeat;
     transition: background-color 0.3s linear;
   }
@@ -424,7 +424,7 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url(../../../images/hero/play-btn-small.png);
+    background-image: url(../images/hero/play-btn-small.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;

@@ -43,7 +43,7 @@
         }
 
         &::after {
-          background-image: url(../../../images/blog/mic.svg);
+          background-image: url(../images/blog/mic.svg);
         }
       }
     }
@@ -55,7 +55,7 @@
         }
 
         &::after {
-          background-image: url(../../../images/blog/play.svg);
+          background-image: url(../images/blog/play.svg);
         }
       }
     }
@@ -67,7 +67,7 @@
         }
 
         &::after {
-          background-image: url(../../../images/blog/files.svg);
+          background-image: url(../images/blog/files.svg);
         }
       }
     }
@@ -179,13 +179,13 @@
 
     &--calendar {
       &::before {
-        mask-image: url('../../../images/sprite.svg#calendar');
+        mask-image: url('../images/sprite.svg#calendar');
       }
     }
 
     &--clock {
       &::before {
-        mask-image: url('../../../images/sprite.svg#clock');
+        mask-image: url('../images/sprite.svg#clock');
       }
     }
 
@@ -263,7 +263,7 @@
       right: 10px;
       top: 2px;
       background-color: $c-primary;
-      mask-image: url('../../../images/sprite.svg#arrow-next');
+      mask-image: url('../images/sprite.svg#arrow-next');
       mask-repeat: no-repeat;
       mask-size: cover;
       transition: background-color 0.3s linear, transform 0.3s linear, border 0.3s linear;

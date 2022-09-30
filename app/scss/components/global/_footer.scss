@@ -79,7 +79,7 @@
         right: 0;
         top: 2px;
         background-color: $c-white;
-        mask-image: url('../../../images/sprite.svg#down-chevron');
+        mask-image: url('../images/sprite.svg#down-chevron');
         mask-repeat: no-repeat;
         transition: transform 0.3s ease, background-color 0.3s ease;
       }
@@ -290,7 +290,7 @@
       height: 16px;
       left: 0;
       top: 0;
-      background-image: url(../../../images/icons/heart.svg);
+      background-image: url(../images/icons/heart.svg);
     }
   }
 
